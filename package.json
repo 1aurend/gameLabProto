@@ -1,5 +1,5 @@
 {
-  "name": "simpleTutorial",
+  "name": "gameLabProto",
   "private": true,
   "dependencies": {
     "react": "^16.8.4",
