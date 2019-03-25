@@ -1,0 +1,16 @@
+.button {
+  border-radius: 12px;
+  font-size: 16px;
+  background-color: #008CBA;
+  color: white;
+  padding: 15px 32px;
+}
+
+.myLink {
+  font-size: 16px;
+  color: white;
+}
+
+.myLink:hover {
+  color: pink;
+}

@@ -1,0 +1,109 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  grid-template-rows: repeat(3, 300px);
+  grid-gap: 5px;
+  /* grid-auto-rows: minmax(100px, auto); */
+}
+.one {
+  grid-column: 1 / 2;
+  grid-row: 1 ;
+}
+.two {
+  grid-column: 2 / 3;
+  grid-row: 1;
+}
+.three {
+  grid-column: 3 / 4;
+  grid-row: 1;
+}
+.four {
+  grid-column: 1 / 2;
+  grid-row: 2;
+}
+.five {
+  grid-column: 2 / 3;
+  grid-row: 2;
+}
+.six {
+  grid-column: 3 / 4;
+  grid-row: 2;
+}
+.seven {
+  grid-column: 1 / 2;
+  grid-row: 3;
+}
+.eight {
+  grid-column: 2 / 3;
+  grid-row: 3;
+}
+.nine {
+  grid-column: 3 / 4;
+  grid-row: 3;
+}
+
+
+
+.button {
+  border-radius: 12px;
+  font-size: 16px;
+  background-color: #0d44e8;
+  color: white;
+  padding: 15px 32px;
+}
+
+.buttonLink {
+  font-size: 16px;
+  color: white;
+}
+
+.buttonLink:hover {
+  color: magenta;
+}
+
+h1 {
+  font-size: 48px;
+  font-family: 'Exo 2', sans-serif;
+  color: magenta;
+  text-shadow: 10px, 10px, 10px, black;
+  font-weight: 600;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+h4 {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 18px;
+  color: blue;
+}
+
+li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+.links {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+.links:visited {
+  color: black;
+}
+.links:hover {
+  color: magenta;
+}
