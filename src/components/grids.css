@@ -1,0 +1,53 @@
+
+.ninegrid{
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  width: 100%;
+  height: 100%;
+}
+
+#title{
+  grid-column: 4 / span 3;
+  grid-row: 2 / span 2;
+}
+
+#pitch{
+  grid-column: 4 / span 3;
+  grid-row: 4 / span 4;
+  background-color: #7fc8a0;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+#navside{
+  grid-column: 7 / span 3;
+  grid-row: 4 / span 3;
+}
+
+.navLink{
+  margin: 40px;
+  max-height: 4vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.navDice{
+  max-height: inherit;
+}
+
+
+.navText{
+  color: #000;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  text-transform: lowercase;
+  height: 30px;
+  line-height: 30px;
+  white-space: nowrap;
+  padding-left: 10px;
+}
+
+a{
+  text-decoration: none;
+}
