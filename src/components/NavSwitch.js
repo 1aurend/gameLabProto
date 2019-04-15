@@ -9,7 +9,7 @@ import Home from './Home.js'
 
 
 const NavSwitch = () => (
-  <main>
+  <body>
     <Switch>
       <Route exact path='/' component={Home}/>
       <Route path='/mechanics' component={MechanicsRoutes}/>
@@ -17,7 +17,7 @@ const NavSwitch = () => (
       <Route path='/examples' component={Seminar}/>
       <Route path='/examples' component={Examples}/>
     </Switch>
-  </main>
+  </body>
 )
 
 export default NavSwitch;

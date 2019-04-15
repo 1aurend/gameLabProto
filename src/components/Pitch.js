@@ -5,8 +5,11 @@ import pitchText from '../pitchText.js'
 
 function Pitch() {
   return (
-    <p>{pitchText}
-    </p>
+    <div>
+        <h5>{pitchText.subtitle}</h5>
+        <p>{pitchText.pitch}</p>
+        <p>{pitchText.close}</p>
+    </div>
   )
 }
 
