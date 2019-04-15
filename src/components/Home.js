@@ -3,8 +3,9 @@ import Title from './Header.js';
 import NavSwitch from './NavSwitch.js';
 import Pitch from './Pitch.js';
 import './grids.css';
+import Nav from './Nav.js'
 
-function App() {
+function Home() {
   return (
     <div className='ninegrid'>
       <div id='title'>
@@ -14,10 +15,10 @@ function App() {
         <Pitch />
       </div>
       <div id='navside'>
-        <NavSwitch />
+        <Nav />
       </div>
     </div>
   )
 }
 
-export default App;
+export default Home;

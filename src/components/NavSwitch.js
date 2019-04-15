@@ -5,12 +5,13 @@ import Playtest from './Playtest.js';
 import Examples from './Examples.js';
 import Seminar from './Seminar.js';
 import MechanicsRoutes from './Mechanics.js';
+import Home from './Home.js'
 
 
 const NavSwitch = () => (
   <main>
     <Switch>
-      <Route exact path='/' component={Nav}/>
+      <Route exact path='/' component={Home}/>
       <Route path='/mechanics' component={MechanicsRoutes}/>
       <Route path='/playtest' component={Playtest}/>
       <Route path='/examples' component={Seminar}/>
