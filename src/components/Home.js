@@ -4,6 +4,7 @@ import NavSwitch from './NavSwitch.js';
 import Pitch from './Pitch.js';
 import './grids.css';
 import Nav from './Nav.js';
+import Pacman from './Pacman.js'
 
 const colors = {
   gray: '#3b3c3d',
@@ -23,6 +24,7 @@ class Home extends Component {
     this.state = {
       contentUp: '0',
       color: '#3b3c3d',
+      pacman: false,
     }
 
     this.onMouseOver = this.onMouseOver.bind(this);
@@ -31,6 +33,10 @@ class Home extends Component {
 
   onMouseOver = (params) => (e) => {
     this.setState({contentUp: params.num, color: params.color});
+  }
+
+  playPacman(){
+    this.setState({pacman: !this.state.pacman});
   }
 
   render() {
@@ -44,6 +50,9 @@ class Home extends Component {
             </div>
             <div id='navside'>
               <Nav onHover={(e) => this.onMouseOver(e)} active={this.state.contentUp} />
+            </div>
+            <div id='pacman'>
+              <Pacman playing={this.state.pacman} onClick={() => this.playPacman()}/>
             </div>
           </div>
     )
