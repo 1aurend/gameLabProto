@@ -38,7 +38,7 @@ const toolsDemo = (
 const theSeminar = (
   <React.Fragment>
     <h5>the seminar</h5>
-    <p>In Spring 2019, we taught a Bok Seminar for graduate students called Let’s Play! What Games can Teach us about Motivation and Engagement. We used Jesse Schell’s The Art of Game Design as our textbook. (We think it should be required reading for all teachers.) Each week we discussed a different game mechanic or design principle, and participants designed assignments that deployed that mechanic. You can view our full syllabus here.</p>
+    <p>In Spring 2019, we taught a Bok Seminar for graduate students called Let’s Play! What Games can Teach us about Motivation and Engagement. We used Jesse Schell’s The Art of Game Design as our textbook. (We think it should be required reading for all teachers.) Each week we discussed a different game mechanic or design principle, and participants designed assignments that deployed that mechanic. You can <Link to='/seminar' style={{color: '#fcf5eb', textDecoration: 'underline'}}>view our full syllabus</Link> here.</p>
   </React.Fragment>
 )
 

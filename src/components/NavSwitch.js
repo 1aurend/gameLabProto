@@ -1,6 +1,5 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Nav from './Nav.js';
 import Playtest from './Playtest.js';
 import Examples from './Examples.js';
 import Seminar from './Seminar.js';

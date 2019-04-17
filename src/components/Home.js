@@ -3,10 +3,10 @@ import Title from './Title.js';
 import NavSwitch from './NavSwitch.js';
 import Pitch from './Pitch.js';
 import './grids.css';
-import Nav from './Nav.js';
 import Pacman from './Pacman.js'
 import Snake from './Snake.js'
 import Tetris from './Tetris.js'
+import NavSimp from './Nav_simplified.js'
 
 const colors = {
   gray: '#3b3c3d',
@@ -61,7 +61,7 @@ class Home extends Component {
               <Pitch text={this.state.contentUp}/>
             </div>
             <div id='navside'>
-              <Nav onHover={(e) => this.onMouseOver(e)} active={this.state.contentUp} />
+              <NavSimp onHover={(e) => this.onMouseOver(e)} active={this.state.contentUp} />
             </div>
             <div id='pacman'>
               <Pacman playing={this.state.pacman} onClick={() => this.playPacman()} color={this.state.color}/>
