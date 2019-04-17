@@ -13,7 +13,7 @@ const NavSwitch = () => (
       <Route exact path='/' component={Home}/>
       <Route path='/mechanics' component={MechanicsRoutes}/>
       <Route path='/playtest' component={Playtest}/>
-      <Route path='/examples' component={Seminar}/>
+      <Route path='/seminar' component={Seminar}/>
       <Route path='/examples' component={Examples}/>
     </Switch>
 
