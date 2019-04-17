@@ -1,12 +1,12 @@
 import React from 'react';
 import './grids.css';
 import die5 from '../assets/dice_5.svg';
-import PacmanGame from 'pacman-react';
+import TetrisGame from 'nilssongames-tetris';
 import pacmansvg from '../assets/pacman.svg';
 import pacmaninvsvg from '../assets/pacman_invert.svg'
 
 
-function Pacman (props) {
+function Tetris (props) {
 
   var icon = pacmansvg;
 
@@ -24,11 +24,11 @@ function Pacman (props) {
   else {
     return (
       <div onClick={props.onClick}>
-        <PacmanGame />
+        <TetrisGame />
       </div>
     )
   }
 
 }
 
-export default Pacman;
+export default Tetris;

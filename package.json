@@ -2,6 +2,8 @@
   "name": "gameLabProto",
   "private": true,
   "dependencies": {
+    "nilssongames-snake": "^2.0.0",
+    "nilssongames-tetris": "^1.0.0",
     "node-sass": "^4.11.0",
     "pacman-react": "0.0.1",
     "react": "^16.8.4",
