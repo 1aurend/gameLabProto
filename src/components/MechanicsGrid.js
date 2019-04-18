@@ -1,47 +1,48 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './components.css'
+import './grids.css'
+import L1Header from './L1Header.js'
 
 function MechanicsGrid() {
   return (
     <div>
-      <h2>Mechanics</h2>
-      <div>
-      <div className="wrapper">
-        <button className="one">
+      <div style={{backgroundColor: "#dd3d27"}}>
+      <div id='mechanicstitle'>
+        <L1Header />
+      </div>
+      </div>
+      <div className="ninegrid" style={{backgroundColor: "#dd3d27"}}>
+        <div id='mechanic1'>
           <Link className="links" to='/mechanics/time'>Time</Link>
-        </button>
-        <button className="two">
+        </div>
+        <div id="mechanic2">
           <Link className="links" to='/mechanics/space'>Space</Link>
-        </button>
-        <button className="three">
+        </div>
+        <div id='mechanic3'>
           <Link className="links" to='/mechanics/chance'>Chance</Link>
-        </button>
-        <button className="four">
+        </div>
+        <div id="mechanic4">
           <Link className="links" to='/mechanics/chance'>Action</Link>
-        </button>
-        <button className="five">
-          <Link className="links" to='/mechanics/chance'>Risk</Link>
-        </button>
-        <button className="six">
+        </div>
+        <div id="centertext">
+          <h2 style={{paddingLeft: '29%'}}>the mechanics</h2>
+          <p style={{paddingLeft: '15px', paddingRight: '10px'}}>Mechanics are the interactions and relationships that make a game a system. Mechanics are what make a game interactive rather than entertainment you just take in. Put simply, mechanics are what make a game work. For this reason, designing with mechanics in mind is the key way teachers can apply the logic of game design to the classroom.</p>
+          <p style={{paddingLeft: '15px', paddingRight: '10px'}}>Use our mechanic inventory to explore implementing game mechanics in your class.</p>
+        </div>
+        <div id="mechanic5">
           <Link className="links" to='/mechanics/chance'>Challenge</Link>
-        </button>
-        <button className="seven">
+        </div>
+        <div id="mechanic6">
           <Link className="links" to='/mechanics/chance'>Training</Link>
-        </button>
-        <button className="eight">
+        </div>
+        <div id="mechanic7">
           <Link className="links" to='/mechanics/chance'>Strategy</Link>
-        </button>
-        <button className="nine">
+        </div>
+        <div id="mechanic8">
           <Link className="links" to='/mechanics/chance'>Role-Play</Link>
-        </button>
+        </div>
       </div>
-      <div style={{padding: "10px"}}>
-        <button className="button">
-          <Link className="buttonLink" to='/'>Home</Link>
-        </button>
-      </div>
-  </div>
 </div>
   );
 }
