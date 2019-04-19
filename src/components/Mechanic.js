@@ -7,7 +7,6 @@ import Moves from './Moves.js'
 import Page from './MovePage.js'
 
 
-// console.log(JSON.stringify(mechanicsList));
 
 function findMechanic (name) {
   for (var i = 0; i < mechanicsList.length; i++) {
@@ -52,29 +51,6 @@ function Mechanic(props) {
 }
 
 
-function MechanicsRoutes(props) {
-
-  console.log(JSON.stringify(props));
-  const level = props.location.pathname.split("/");
-  console.log(level);
-  let nestedPath;
-
-  if (level.length === 4) {
-    nestedPath = <Route path={props.location.pathname} component={Page}/>
-  }
-  else {
-    nestedPath = <Route path={props.location.pathname} component={Mechanic}/>
-  }
-
-    return (
-      <Switch>
-        <Route exact path='/mechanics' component={MechanicsGrid}/>
-        {nestedPath}
-      </Switch>
-    );
 
 
-}
-
-
-export default MechanicsRoutes;
+export default Mechanic;

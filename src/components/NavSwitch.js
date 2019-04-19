@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import Playtest from './Playtest.js';
 import Examples from './Examples.js';
 import Seminar from './Seminar.js';
-import MechanicsRoutes from './Mechanics.js';
+import MechanicsRoutes from './MechanicsRoutes.js';
 import Home from './Home.js'
 
 
