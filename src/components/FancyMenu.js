@@ -18,6 +18,7 @@ class FancyMenu extends Component {
 
     this.state = {
       active: false,
+      path: '',
     }
 
     this._onClick = this._onClick.bind(this);
@@ -29,13 +30,47 @@ class FancyMenu extends Component {
     });
   }
 
+  componentDidMount() {
+    this.setState({
+      path: this.props.path
+    });
+  }
+
   render() {
-    const iconArrayOne = [die1, die2];
-    const iconArrayTwo = [die4, die5];
-    const tooltipArrayOne = ['start', 'mechanics'];
-    const tooltipArrayTwo = ['tools', 'examples'];
-    const linkArrayOne = ['/', 'mechanics'];
-    const linkArrayTwo = ['/playtest', '/examples']
+    let leftDice;
+    let rightDice;
+    let tooltipLeftDice;
+    let tooltipRightDice;
+    let leftDiceLinks;
+    let rightDiceLinks;
+
+    if (this.props.path === '/seminar' || this.props.path === '/playtest' || this.props.path === '/examples') {
+      leftDice = [die1, die2]
+      tooltipLeftDice = ['start', 'mechanics']
+      leftDiceLinks = ['/', 'mechanics']
+    }
+    else if (this.props.path === '/mechanics') {
+      leftDice = [die1, die3]
+      tooltipLeftDice = ['start', 'seminar']
+      leftDiceLinks = ['/', 'seminar']
+    }
+
+    if (this.props.path === '/seminar' || this.props.path === '/mechanics') {
+      rightDice = [die4, die5]
+      tooltipRightDice = ['tools', 'examples']
+      rightDiceLinks = ['/playtest', '/examples']
+    }
+    else if (this.props.path === '/playtest' ) {
+      rightDice = [die3, die5]
+      tooltipRightDice = ['seminar', 'examples']
+      rightDiceLinks = ['/seminar', '/examples']
+    }
+    else if (this.props.path === '/examples' ) {
+      rightDice = [die3, die4]
+      tooltipRightDice = ['seminar', 'tools']
+      rightDiceLinks = ['/seminar', '/playtest']
+    }
+
 
     return (
       <div className="container">
@@ -68,9 +103,9 @@ class FancyMenu extends Component {
                       pointerEvents: this.state.active ? 'auto' : 'none',
                     }}
                   >
-                    <Tooltip text={tooltipArrayOne[i]} />
-                      <Link to={linkArrayOne[i]} style={{height: '100%', width: '100%'}}>
-                        <img src={iconArrayOne[i]} alt="dice" style={{height: '40px', width: '40px', margin: '-20px'}} />
+                    <Tooltip text={tooltipLeftDice[i]} />
+                      <Link to={leftDiceLinks[i]} style={{height: '100%', width: '100%', display: 'block'}}>
+                        <img src={leftDice[i]} alt="dice" style={{height: '40px', width: '40px', margin: '-20px'}} />
                       </Link>
                  </Button>
                 )}
@@ -123,9 +158,9 @@ class FancyMenu extends Component {
                       pointerEvents: this.state.active ? 'auto' : 'none',
                     }}
                   >
-                    <Tooltip text={tooltipArrayTwo[i]} />
-                    <Link to={linkArrayTwo[i]} style={{height: '100%', width: '100%'}}>
-                      <img src={iconArrayTwo[i]} alt="dice" style={{height: '40px', width: '40px', margin: '-20px'}} />
+                    <Tooltip text={tooltipRightDice[i]} />
+                    <Link to={rightDiceLinks[i]} style={{height: '100%', width: '100%', display: 'block'}}>
+                      <img src={rightDice[i]} alt="dice" style={{height: '40px', width: '40px', margin: '-20px'}} />
                     </Link>
                   </Button>
                 )}

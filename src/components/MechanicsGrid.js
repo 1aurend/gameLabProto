@@ -3,16 +3,17 @@ import { Link } from 'react-router-dom';
 import './components.css'
 import './grids.css'
 import L1Header from './L1Header.js'
+import FancyMenu from './FancyMenu.js'
 
-function MechanicsGrid() {
+function MechanicsGrid(props) {
   return (
     <div>
       <div style={{backgroundColor: "#dd3d27"}}>
-      <div id='mechanicstitle'>
-        <L1Header />
-      </div>
       </div>
       <div className="ninegrid" style={{backgroundColor: "#dd3d27"}}>
+        <div id='fancyMenu'>
+          <FancyMenu path={props.location.pathname}/>
+        </div>
         <div id='mechanic1'>
           <Link className="links" to='/mechanics/time'>Time</Link>
         </div>

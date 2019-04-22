@@ -7,13 +7,12 @@ import syllabus1 from '../assets/letsplay-syllabus-1.png'
 import syllabus2 from '../assets/letsplay-syllabus-2.png'
 import FancyMenu from './FancyMenu.js'
 
-function Seminar () {
+function Seminar (props) {
 
   return(
-    <>
       <div className="ninegrid" style={{backgroundColor: '#e2af3b'}}>
         <div id='fancyMenu'>
-          <FancyMenu />
+          <FancyMenu path={props.location.pathname}/>
         </div>
         <div id='syllabus1'>
           <img src={syllabus1} alt='syllabus page 1' style={{width: '100%', paddingLeft: '0%'}}/>
@@ -22,7 +21,6 @@ function Seminar () {
           <img src={syllabus2} alt='syllabus page 1' style={{width: '100%', paddingLeft: '0%'}}/>
         </div>
       </div>
-    </>
 )
 
 }
