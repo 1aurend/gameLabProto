@@ -41,6 +41,8 @@ html, body {
   grid-column: 4 / span 3;
   grid-row: 1 / span 1;
   margin: auto;
+  display: flex;
+  flex-direction: row;
 }
 
 #activeMech {

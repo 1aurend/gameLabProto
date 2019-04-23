@@ -1,24 +1,38 @@
 import React from 'react'
 import '../mechanics_grid.css'
+import mechanicsList from './mechanicslist.js'
+
+
+function findMechanic (name) {
+  for (var i = 0; i < mechanicsList.length; i++) {
+    if (name === mechanicsList[i].name) {
+      return mechanicsList[i];
+    }
+  }
+};
 
 
 function CenterPane(props){
 
   console.log('getting here now');
   let pathSplit = props.location.pathname.split('/')
-  let mechanic = pathSplit[(pathSplit.length-1)]
+  let mechanic = findMechanic(pathSplit[(pathSplit.length-1)])
+  console.log(mechanic);
+
+  const movesLinks = mechanic.moves.map((move) => <h5>&nbsp;&nbsp;&nbsp;&nbsp;<span>{move}</span></h5> )
+
+
 
   return (
   <>
     <div id='movesLinks'>
-      <h5>moves links here...</h5>
+      {movesLinks}
     </div>
     <div id='activeMech'>
-      {mechanic}
+      {mechanic.name}
     </div>
     <div id="centertext">
-      <p>Mechanics are the interactions and relationships that make a game a system. Mechanics are what make a game interactive rather than entertainment you just take in. Put simply, mechanics are what make a game work. For this reason, designing with mechanics in mind is the key way teachers can apply the logic of game design to the classroom.</p>
-      <p>Use our mechanic inventory to explore implementing game mechanics in your class.</p>
+      <p>{mechanic.pitch}</p>
     </div>
   </>
   )
