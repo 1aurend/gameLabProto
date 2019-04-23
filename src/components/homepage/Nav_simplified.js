@@ -1,16 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './grids.css'
-import die1 from '../assets/dice_1.svg';
-import die1inv from '../assets/dice_1_invert.svg'
-import die2 from '../assets/dice_2.svg';
-import die2inv from '../assets/dice_2_invert.svg'
-import die3 from '../assets/dice_3.svg';
-import die3inv from '../assets/dice_3_invert.svg'
-import die4 from '../assets/dice_4.svg';
-import die4inv from '../assets/dice_4_invert.svg'
-import die5 from '../assets/dice_5.svg';
-import die5inv from '../assets/dice_5_invert.svg'
+import './../grids.css'
+import die1 from '../../assets/dice_1.svg';
+import die1inv from '../../assets/dice_1_invert.svg'
+import die2 from '../../assets/dice_2.svg';
+import die2inv from '../../assets/dice_2_invert.svg'
+import die3 from '../../assets/dice_3.svg';
+import die3inv from '../../assets/dice_3_invert.svg'
+import die4 from '../../assets/dice_4.svg';
+import die4inv from '../../assets/dice_4_invert.svg'
+import die5 from '../../assets/dice_5.svg';
+import die5inv from '../../assets/dice_5_invert.svg'
 
 
 const colors = {

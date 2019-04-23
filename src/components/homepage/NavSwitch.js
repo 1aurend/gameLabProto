@@ -1,9 +1,9 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Playtest from './Playtest.js';
-import Examples from './Examples.js';
-import Seminar from './Seminar.js';
-import MechanicsRoutes from './MechanicsRoutes.js';
+import Playtest from '../subpages/Playtest.js';
+import Examples from '../subpages/Examples.js';
+import Seminar from '../subpages/Seminar.js';
+import MechanicsRoutes from '../mechanics/MechanicsRoutes.js';
 import Home from './Home.js'
 
 

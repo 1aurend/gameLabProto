@@ -1,7 +1,6 @@
 import React from 'react';
-import './components.css';
-import './grids.css';
-import { about, examples, theMechanics, theSeminar, toolsDemo } from '../pitchText.js'
+import '../grids.css';
+import { about, examples, theMechanics, theSeminar, toolsDemo } from './pitchText.js'
 
 function Pitch(props) {
 

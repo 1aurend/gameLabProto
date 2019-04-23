@@ -1,8 +1,7 @@
 import React from 'react';
 import{ Link, Switch, Route } from 'react-router-dom';
-import './components.css';
 import MechanicsGrid from './MechanicsGrid';
-import mechanicsList from '../mechanicslist.js'
+import mechanicsList from './mechanicslist.js'
 import Moves from './Moves.js'
 import Page from './MovePage.js'
 import Mechanic from './Mechanic.js'

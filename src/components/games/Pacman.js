@@ -1,9 +1,9 @@
 import React from 'react';
-import './grids.css';
-import die5 from '../assets/dice_5.svg';
+import './../grids.css';
+import die5 from '../../assets/dice_5.svg';
 import PacmanGame from 'pacman-react';
-import pacmansvg from '../assets/pacman.svg';
-import pacmaninvsvg from '../assets/pacman_invert.svg'
+import pacmansvg from '../../assets/pacman.svg';
+import pacmaninvsvg from '../../assets/pacman_invert.svg'
 
 
 function Pacman (props) {

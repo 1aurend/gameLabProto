@@ -1,18 +1,17 @@
 import React from 'react';
 import{ Link } from 'react-router-dom';
-import './components.css'
 import L1Header from './L1Header.js'
-import './grids.css'
-import syllabus1 from '../assets/letsplay-syllabus-1.png'
-import syllabus2 from '../assets/letsplay-syllabus-2.png'
-import FancyMenu from './FancyMenu.js'
+import '../grids.css'
+import syllabus1 from '../../assets/letsplay-syllabus-1.png'
+import syllabus2 from '../../assets/letsplay-syllabus-2.png'
+import DiceNav from '../dice_nav/DiceNav.js'
 
 function Seminar (props) {
 
   return(
       <div className="ninegrid" style={{backgroundColor: '#e2af3b'}}>
-        <div id='fancyMenu'>
-          <FancyMenu path={props.location.pathname}/>
+        <div id='diceNav'>
+          <DiceNav path={props.location.pathname}/>
         </div>
         <div id='syllabus1'>
           <img src={syllabus1} alt='syllabus page 1' style={{width: '100%', paddingLeft: '0%'}}/>

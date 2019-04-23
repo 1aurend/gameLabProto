@@ -1,8 +1,8 @@
 import React from 'react';
-import './grids.css';
-import devsub from '../assets/dev_subtitle.svg'
+import '../grids.css';
+import devsub from '../../assets/dev_subtitle.svg'
 import { Link } from 'react-router-dom'
-import die1 from '../assets/dice_1.svg'
+import die1 from '../../assets/dice_1.svg'
 
 
 function L1Header () {

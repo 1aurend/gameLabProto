@@ -1,11 +1,10 @@
 import React from 'react';
 import{ Link } from 'react-router-dom';
-import './components.css'
 
-const Playtest = () => (
+const Examples = () => (
   <div>
-    <h2>Playtest Your Assignment</h2>
-    <p>Questions from Game Design for Crafting Classroom Experiences</p>
+    <h2>Sample Assignments Incorporating Game Mechanics</h2>
+    <p className="test">This will be organized somehow...</p>
     <h3>Coming soon!</h3>
     <button className="button">
       <Link className="buttonLink" to='/'>Home</Link>
@@ -13,4 +12,4 @@ const Playtest = () => (
   </div>
 );
 
-export default Playtest;
+export default Examples;

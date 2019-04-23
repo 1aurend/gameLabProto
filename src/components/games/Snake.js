@@ -1,17 +1,17 @@
 import React from 'react';
-import './grids.css';
-import die5 from '../assets/dice_5.svg';
-import TetrisGame from 'nilssongames-tetris';
-import pacmansvg from '../assets/pacman.svg';
-import pacmaninvsvg from '../assets/pacman_invert.svg'
+import './../grids.css';
+import die5 from '../../assets/dice_5.svg';
+import SnakeGame from 'nilssongames-snake';
+import pacmansvg from '../../assets/pacman.svg';
+import pacmaninvsvg from '../../assets/pacman_invert.svg';
 
 
-function Tetris (props) {
+function Snake (props) {
 
   var icon = pacmansvg;
 
   if (props.color === '#e2af3b') {
-    icon = pacmaninvsvg
+    icon = pacmaninvsvg;
   }
 
   if (!props.playing) {
@@ -24,11 +24,11 @@ function Tetris (props) {
   else {
     return (
       <div onClick={props.onClick}>
-        <TetrisGame />
+        <SnakeGame />
       </div>
     )
   }
 
 }
 
-export default Tetris;
+export default Snake;

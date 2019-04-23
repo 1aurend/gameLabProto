@@ -1,7 +1,6 @@
 import React from 'react';
-import './components.css';
-import './grids.css';
-import titleimg from '../assets/title.svg'
+import '../grids.css';
+import titleimg from '../../assets/title.svg'
 
 function Title() {
   return (

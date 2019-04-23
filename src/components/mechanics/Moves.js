@@ -1,7 +1,5 @@
 import React from 'react';
 import{ Link, Switch, Route } from 'react-router-dom';
-import './components.css';
-// import Page from './MovePage.js'
 import MechanicsGrid from './MechanicsGrid.js'
 
 

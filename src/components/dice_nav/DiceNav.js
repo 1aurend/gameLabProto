@@ -1,18 +1,18 @@
-import './nav.scss';
-import './grids.css'
+import './dice_nav.scss';
+import './../grids.css'
 import React, { Component } from 'react';
 import { Motion, StaggeredMotion, spring } from 'react-motion';
-import die1 from '../assets/dice_1.svg'
-import die2 from '../assets/dice_2.svg';
-import die3 from '../assets/dice_3.svg';
-import die4 from '../assets/dice_4.svg';
-import die5 from '../assets/dice_5.svg';
+import die1 from '../../assets/dice_1.svg'
+import die2 from '../../assets/dice_2.svg';
+import die3 from '../../assets/dice_3.svg';
+import die4 from '../../assets/dice_4.svg';
+import die5 from '../../assets/dice_5.svg';
 import { Link } from 'react-router-dom'
 
 
 
 
-class FancyMenu extends Component {
+class DiceNav extends Component {
   constructor() {
     super();
 
@@ -71,6 +71,9 @@ class FancyMenu extends Component {
       rightDiceLinks = ['/seminar', '/playtest']
     }
 
+    var centerColor = this.state.active ? {backgroundColor: '#fcf5eb'} : {backgroundColor: '#fcf5eb'}
+    console.log(centerColor);
+
 
     return (
       <div className="container">
@@ -105,7 +108,7 @@ class FancyMenu extends Component {
                   >
                     <Tooltip text={tooltipLeftDice[i]} />
                       <Link to={leftDiceLinks[i]} style={{height: '100%', width: '100%', display: 'block'}}>
-                        <img src={leftDice[i]} alt="dice" style={{height: '40px', width: '40px', margin: '-20px'}} />
+                        <img src={leftDice[i]} alt="dice" style={{height: '40px', width: '40px', margin: '0px'}} />
                       </Link>
                  </Button>
                 )}
@@ -122,8 +125,9 @@ class FancyMenu extends Component {
                 className="button--large"
                 onClick={this._onClick}
                 style={{
-                  transform: 'scale(' + interpolatingStyles.s + ')', backgroundColor: "#3b3c3d",
+                  transform: 'scale(' + interpolatingStyles.s + ')'
                 }}
+                style={centerColor}
               >
                 <span className={this.state.active ? 'icon active' : 'icon'} />
               </Button>
@@ -160,7 +164,7 @@ class FancyMenu extends Component {
                   >
                     <Tooltip text={tooltipRightDice[i]} />
                     <Link to={rightDiceLinks[i]} style={{height: '100%', width: '100%', display: 'block'}}>
-                      <img src={rightDice[i]} alt="dice" style={{height: '40px', width: '40px', margin: '-20px'}} />
+                      <img src={rightDice[i]} alt="dice" style={{height: '40px', width: '40px', margin: '0px'}} />
                     </Link>
                   </Button>
                 )}
@@ -182,4 +186,4 @@ const Button = (props) => <button className='button' style={props.style} onClick
 
 
 
-export default FancyMenu;
+export default DiceNav;

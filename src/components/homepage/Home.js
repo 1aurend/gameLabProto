@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import Title from './Title.js';
 import NavSwitch from './NavSwitch.js';
 import Pitch from './Pitch.js';
-import './grids.css';
-import Pacman from './Pacman.js'
-import Snake from './Snake.js'
-import Tetris from './Tetris.js'
+import './../grids.css';
+import Pacman from '../games/Pacman.js'
+import Snake from '../games/Snake.js'
+import Tetris from '../games/Tetris.js'
 import NavSimp from './Nav_simplified.js'
 
 const colors = {
