@@ -1,12 +1,29 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { Component } from 'react';
+import { Switch, Link, Route } from 'react-router-dom';
 import '../grids.css'
 import '../mechanics_grid.css'
 import L1Header from '../subpages/L1Header.js'
 import DiceNav from '../dice_nav/DiceNav.js'
 import gameLab from '../../assets/dev_subtitle.svg'
+import CenterPane from './CenterPane.js'
 
-function MechanicsGrid(props) {
+class MechanicsGrid extends Component {
+
+  constructor(props){
+    super(props);
+    this.state = {
+      active: 'mechanics',
+    }
+    this.onClick = this.onClick.bind(this)
+  }
+
+  onClick(mech){
+    this.setState({active: mech});
+    console.log('this is active state: ' + this.state.active);
+
+  }
+
+  render() {
   return (
     <div>
       <div style={{backgroundColor: "#dd3d27"}}>
@@ -17,45 +34,41 @@ function MechanicsGrid(props) {
           <h1>the mechanics</h1>
         </div>
         <div id='diceNav'>
-          <DiceNav path={props.location.pathname}/>
+          <DiceNav path={this.props.location.pathname}/>
         </div>
-        <div id='movesLinks'>
-          links to moves go here...
-        </div>
-        <div id='activeMech'>
-          about
+        <div id='mechSwitch'>
+            <Switch>
+              <Route path={this.props.location.pathname} component={CenterPane}/>
+            </Switch>
         </div>
         <div id='mechanic1'>
-          <Link className="mechLink" to='/mechanics/time'>Time</Link>
+          <Link className="mechLink" to='/mechanics/time' onClick={(e) => this.onClick('time', e)}>Time</Link>
         </div>
         <div id="mechanic2">
-          <Link className="mechLink" to='/mechanics/space'>Space</Link>
+          <Link className="mechLink" to='/mechanics/space' onClick={(e) => this.onClick('space', e)}>Space</Link>
         </div>
         <div id='mechanic3'>
-          <Link className="mechLink" to='/mechanics/chance'>Chance</Link>
+          <Link className="mechLink" to='/mechanics/chance' onClick={(e) => this.onClick('chance', e)}>Chance</Link>
         </div>
         <div id="mechanic4">
-          <Link className="mechLink" to='/mechanics/chance'>Action</Link>
-        </div>
-        <div id="centertext">
-          <p>Mechanics are the interactions and relationships that make a game a system. Mechanics are what make a game interactive rather than entertainment you just take in. Put simply, mechanics are what make a game work. For this reason, designing with mechanics in mind is the key way teachers can apply the logic of game design to the classroom.</p>
-          <p>Use our mechanic inventory to explore implementing game mechanics in your class.</p>
+          <Link className="mechLink" to='/mechanics/action' onClick={(e) => this.onClick('action', e)}>Action</Link>
         </div>
         <div id="mechanic5">
-          <Link className="mechLink" to='/mechanics/chance'>Challenge</Link>
+          <Link className="mechLink" to='/mechanics/challenge' onClick={(e) => this.onClick('challenge', e)}>Challenge</Link>
         </div>
         <div id="mechanic6">
-          <Link className="mechLink" to='/mechanics/chance'>Training</Link>
+          <Link className="mechLink" to='/mechanics/training' onClick={(e) => this.onClick('training', e)}>Training</Link>
         </div>
         <div id="mechanic7">
-          <Link className="mechLink" to='/mechanics/chance'>Strategy</Link>
+          <Link className="mechLink" to='/mechanics/strategy' onClick={(e) => this.onClick('strategy', e)}>Strategy</Link>
         </div>
         <div id="mechanic8">
-          <Link className="mechLink" to='/mechanics/chance'>Multiplayer</Link>
+          <Link className="mechLink" to='/mechanics/multiplayer'onClick={(e) => this.onClick('muliplayer', e)}>Multiplayer</Link>
         </div>
       </div>
 </div>
   );
+}
 }
 
 export default MechanicsGrid;

@@ -43,19 +43,21 @@ class DiceNav extends Component {
     let tooltipRightDice;
     let leftDiceLinks;
     let rightDiceLinks;
+    let reMech = /^\/mechanics/
+    console.log('here is path: ' + this.props.path);
 
     if (this.props.path === '/seminar' || this.props.path === '/playtest' || this.props.path === '/examples') {
       leftDice = [die1, die2]
       tooltipLeftDice = ['start', 'mechanics']
       leftDiceLinks = ['/', 'mechanics']
     }
-    else if (this.props.path === '/mechanics') {
+    else if (reMech.test(this.props.path)) {
       leftDice = [die1, die3]
       tooltipLeftDice = ['start', 'seminar']
       leftDiceLinks = ['/', 'seminar']
     }
 
-    if (this.props.path === '/seminar' || this.props.path === '/mechanics') {
+    if (this.props.path === '/seminar' || reMech.test(this.props.path)) {
       rightDice = [die4, die5]
       tooltipRightDice = ['tools', 'examples']
       rightDiceLinks = ['/playtest', '/examples']
@@ -73,6 +75,7 @@ class DiceNav extends Component {
 
     var centerColor = this.state.active ? {backgroundColor: '#fcf5eb'} : {backgroundColor: '#fcf5eb'}
     console.log(centerColor);
+    console.log(leftDice);
 
 
     return (

@@ -14,12 +14,13 @@ function MechanicsRoutes(props) {
   const level = props.location.pathname.split("/");
   console.log(level);
   let nestedPath;
+  console.log('why are we here???');
 
   if (level.length === 4) {
     nestedPath = <Route path={props.location.pathname} component={Page}/>
   }
   else {
-    nestedPath = <Route path={props.location.pathname} component={Mechanic}/>
+    nestedPath = <Route path={props.location.pathname} component={MechanicsGrid}/>
   }
 
     return (
