@@ -27,7 +27,7 @@ html, body {
   margin: auto;
 }
 
-#mechSwitch {
+#centerPane{
   grid-column: 4 / span 3;
   grid-row: 4 / span 6;
   display: grid;
@@ -45,14 +45,23 @@ html, body {
   flex-direction: row;
 }
 
+.movesLinksText {
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  color: #fcf5eb;
+  padding-bottom: 0px;
+  cursor: pointer;
+}
+
 #activeMech {
-  grid-column: 5 / span 1;
+  grid-column: 4 / span 3;
   grid-row: 2 / span 1;
   margin-left: auto;
+  margin-right: auto;
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
   font-size: 300%;
-  color: #e2af3b;
+  color: #7fc8a0;
   padding-top: 0;
   margin-top: 0;
 }
@@ -100,9 +109,9 @@ html, body {
 #centertext {
   grid-column: 4 / span 3;
   grid-row: 3 / span 4;
-  border-radius: 15px;
   margin-left: auto;
   margin-right: auto;
+  overflow: scroll;
 }
 
 h1 {
@@ -113,4 +122,11 @@ h1 {
   padding-top: 0;
   margin-top: 0;
   margin-left: 10%;
+}
+
+li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  padding-top: 0px;
+  color: #fcf5eb;
 }

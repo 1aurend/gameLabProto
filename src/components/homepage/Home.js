@@ -13,7 +13,7 @@ const colors = {
   red: '#dd3d27',
   green: '#7fc8a0',
   purple: '#a3509f',
-  white: '#fff',
+  white: '#fcf5eb',
   gold: '#e2af3b',
   blue: '#30AEA4'
 

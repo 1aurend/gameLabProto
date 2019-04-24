@@ -1,6 +1,4 @@
 import React from 'react';
-import{ Link } from 'react-router-dom';
-import L1Header from './L1Header.js'
 import '../grids.css'
 import syllabus1 from '../../assets/letsplay-syllabus-1.png'
 import syllabus2 from '../../assets/letsplay-syllabus-2.png'

@@ -1,11 +1,20 @@
 const mechanicsList = [
   {
-    id: 0,
     name: "mechanics",
-    image: "http://clipartmag.com/images/time-clock-clipart-44.png",
-    imgalt: "clock",
     pitch: "Mechanics are the interactions and relationships that make a game a system. Mechanics are what make a game interactive rather than entertainment you just take in. Put simply, mechanics are what make a game work. For this reason, designing with mechanics in mind is the key way teachers can apply the logic of game design to the classroom.",
-    what: "Well, tomes have been written in literal answer to this question. But qua mechanic, time includes clock time and the various ways in which we can segment and “control” it—i.e. by instituting “pause” or “rewind” mechanisms; races, whether against the clock or another student or the instructor or one’s past self; and “turns” where a meaningful unit of time consists not of some measure of minutes but a unit of action. In addition, we can take the calendar rather than clock perspective on time. At the course or syllabus level, units and assignments are allotted quantities of calendar time; students are given more or less control over when/how they allocate time to the course; course rhythms are established or broken.",
+    what: `Well, tomes have been written in literal answer to this question. But qua mechanic, time includes clock time and the various ways in which we can segment and “control” it—i.e. by instituting “pause” or “rewind” mechanisms; races, whether against the clock or another student or the instructor or one’s past self; and “turns” where a meaningful unit of time consists not of some measure of minutes but a unit of action. In addition, we can take the calendar rather than clock perspective on time. At the course or syllabus level, units and assignments are allotted quantities of calendar time; students are given more or less control over when/how they allocate time to the course; course rhythms are established or broken.`,
+    why: [
+      'Establish stakes or expectations',
+      'Set priorities and draw boundaries',
+      'Create checkpoints',
+      'Create or diminish sense of autonomy',
+      'Leverage regular rhythms',
+      'Foster competition',
+      'Motivate and center focus',
+      'Provide opportunities',
+      'Make space to cool off or reflect',
+    ],
+    how: 'click the links above...',
     moves:
       [
         "something",
@@ -15,12 +24,21 @@ const mechanicsList = [
       ],
   },
   {
-    id: 1,
     name: "time",
-    image: "http://clipartmag.com/images/time-clock-clipart-44.png",
-    imgalt: "clock",
     pitch: "On one level, the pitch for time is that we’re stuck with it. You can’t leave time out of your teaching. But, as a teacher, you have a choice to either merely fill time or to intentionally leverage it to shape student experiences. Time-based mechanics are very versatile. From setting stakes and expectations to including more voices in a conversation, there are many reasons to not lose track of time.",
-    what: "Well, tomes have been written in literal answer to this question. But qua mechanic, time includes clock time and the various ways in which we can segment and “control” it—i.e. by instituting “pause” or “rewind” mechanisms; races, whether against the clock or another student or the instructor or one’s past self; and “turns” where a meaningful unit of time consists not of some measure of minutes but a unit of action. In addition, we can take the calendar rather than clock perspective on time. At the course or syllabus level, units and assignments are allotted quantities of calendar time; students are given more or less control over when/how they allocate time to the course; course rhythms are established or broken.",
+    what: `Well, tomes have been written in literal answer to this question. But qua mechanic, time includes clock time and the various ways in which we can segment and “control” it—i.e. by instituting “pause” or “rewind” mechanisms; races, whether against the clock or another student or the instructor or one’s past self; and “turns” where a meaningful unit of time consists not of some measure of minutes but a unit of action. In addition, we can take the calendar rather than clock perspective on time. At the course or syllabus level, units and assignments are allotted quantities of calendar time; students are given more or less control over when/how they allocate time to the course; course rhythms are established or broken.`,
+    why: [
+      'Establish stakes or expectations',
+      'Set priorities and draw boundaries',
+      'Create checkpoints',
+      'Create or diminish sense of autonomy',
+      'Leverage regular rhythms',
+      'Foster competition',
+      'Motivate and center focus',
+      'Provide opportunities',
+      'Make space to cool off or reflect',
+    ],
+    how: 'click the links above...',
     moves:
       [
         "timers",
@@ -37,6 +55,18 @@ const mechanicsList = [
     imgalt: "rocket",
     pitch: "On one level, the pitch for time is that we’re stuck with it. You can’t leave time out of your teaching. But, as a teacher, you have a choice to either merely fill time or to intentionally leverage it to shape student experiences. Time-based mechanics are very versatile. From setting stakes and expectations to including more voices in a conversation, there are many reasons to not lose track of time.",
     what: "Well, tomes have been written in literal answer to this question. But qua mechanic, time includes clock time and the various ways in which we can segment and “control” it—i.e. by instituting “pause” or “rewind” mechanisms; races, whether against the clock or another student or the instructor or one’s past self; and “turns” where a meaningful unit of time consists not of some measure of minutes but a unit of action. In addition, we can take the calendar rather than clock perspective on time. At the course or syllabus level, units and assignments are allotted quantities of calendar time; students are given more or less control over when/how they allocate time to the course; course rhythms are established or broken.",
+    why: [
+      'Establish stakes or expectations',
+      'Set priorities and draw boundaries',
+      'Create checkpoints',
+      'Create or diminish sense of autonomy',
+      'Leverage regular rhythms',
+      'Foster competition',
+      'Motivate and center focus',
+      'Provide opportunities',
+      'Make space to cool off or reflect',
+    ],
+    how: 'click the links above...',
     moves:
       [
         "timers",
