@@ -3,7 +3,7 @@ html, body {
   padding: 0;
 }
 
-.ninegrid{
+.ninegridOriginal{
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(9, 1fr);
@@ -159,14 +159,6 @@ h3 {
 h5 {
   font-family: 'Nunito', sans-serif;
   font-size: 18px;
-  color: #fcf5eb;
-  padding-bottom: 0px;
-  margin: auto;
-}
-
-.mechLink {
-  font-family: 'Nunito', sans-serif;
-  font-size: 25px;
   color: #fcf5eb;
   padding-bottom: 0px;
   margin: auto;

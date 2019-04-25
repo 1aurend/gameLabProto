@@ -8,9 +8,9 @@ function Examples (props) {
 
   return(
       <div className="ninegrid" style={{backgroundColor: '#a3509f'}}>
-        <div id='subpagetitle'>
-          <img src={gameLab} alt='gameLab'style={{height: '35%', paddingTop: '5%', paddingLeft: '18%'}}/>
-          <h1 style={{color: '#a3509f', paddingLeft: '12%'}}>examples</h1>
+        <div id='mechanicstitle'>
+          <img src={gameLab} alt='gameLab' className='gameLab' style={{maxHeight: '50%'}}/>
+          <div className='pageTitle'><h1 style={{color: '#a3509f'}}>examples</h1></div>
         </div>
         <div id='subpageDiceNav'>
           <DiceNav path={props.location.pathname}/>

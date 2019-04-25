@@ -56,10 +56,6 @@ function CenterPane (props) {
         <p>{contentUp.pitch}</p>
         <h5>What is it?</h5>
         <p>{contentUp.what}</p>
-        <h5>What can it do?</h5>
-        <ul>{effects}</ul>
-        <h5>How do I deploy it?</h5>
-        <ul>{movesInText}</ul>
       </div>
     </>
     )

@@ -5,7 +5,7 @@ html, body {
 
 .ninegrid{
   display: grid;
-  grid-template-columns: repeat(9, 1fr);
+  grid-template-columns: .5fr 1fr .5fr repeat(3, 1fr) .5fr 1fr .5fr;
   grid-template-rows: repeat(9, 1fr);
   width: 100%;
   height: 100%;
@@ -18,7 +18,16 @@ html, body {
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
   background-color: #fcf5eb;
-  display: block;
+  padding: 2%;
+}
+
+#gameLab {
+  grid-column: 4 / span 3;
+  grid-row: 1 / span 1;
+}
+#pageTitle {
+  grid-column: 4 / span 3;
+  grid-row: 2 / span 1;
 }
 
 #diceNav {
@@ -39,7 +48,7 @@ html, body {
 
 #movesLinks {
   grid-column: 4 / span 3;
-  grid-row: 1 / span 1;
+  grid-row: 2 / span 1;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -48,14 +57,14 @@ html, body {
 .movesLinksText {
   font-family: 'Nunito', sans-serif;
   font-size: 18px;
-  color: #fcf5eb;
+  color: #7fc8a0;
   padding-bottom: 0px;
   cursor: pointer;
 }
 
 #activeMech {
   grid-column: 4 / span 3;
-  grid-row: 2 / span 1;
+  grid-row: 1 / span 1;
   margin-left: auto;
   margin-right: auto;
   font-family: 'Nunito', sans-serif;
@@ -63,7 +72,7 @@ html, body {
   font-size: 300%;
   color: #7fc8a0;
   padding-top: 0;
-  margin-top: 0;
+  margin-top: 5%;
 }
 
 #mechanic1 {
@@ -111,17 +120,16 @@ html, body {
   grid-row: 3 / span 4;
   margin-left: auto;
   margin-right: auto;
-  overflow: scroll;
 }
 
 h1 {
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
-  font-size: 400%;
   color: #dd3d27;
-  padding-top: 0;
-  margin-top: 0;
-  margin-left: 10%;
+  padding-top: 1%;
+  margin: auto;
+  font-size: 4rem;
+  text-align: center;
 }
 
 li {
@@ -129,4 +137,12 @@ li {
   font-size: 14px;
   padding-top: 0px;
   color: #fcf5eb;
+}
+
+.mechLink {
+  font-family: 'Nunito', sans-serif;
+  font-size: 25px;
+  color: #fcf5eb;
+  padding-bottom: 0px;
+  margin: auto;
 }

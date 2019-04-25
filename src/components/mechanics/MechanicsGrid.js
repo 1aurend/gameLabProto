@@ -61,8 +61,8 @@ class MechanicsGrid extends Component {
       </div>
       <div className="ninegrid" style={{backgroundColor: "#dd3d27"}}>
         <div id='mechanicstitle'>
-          <img src={gameLab} alt='gameLab'style={{height: '35%', paddingTop: '5%', paddingLeft: '18%'}}/>
-          <h1>the mechanics</h1>
+          <img src={gameLab} alt='gameLab' className='gameLab' style={{maxHeight: '50%'}}/>
+          <div className='pageTitle'><h1>the mechanics</h1></div>
         </div>
         <div id='diceNav'>
           <DiceNav path={this.props.location.pathname}/>

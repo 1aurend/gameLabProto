@@ -49,12 +49,12 @@ class DiceNav extends Component {
     if (this.props.path === '/seminar' || this.props.path === '/playtest' || this.props.path === '/examples') {
       leftDice = [die1, die2]
       tooltipLeftDice = ['start', 'mechanics']
-      leftDiceLinks = ['/', 'mechanics']
+      leftDiceLinks = ['/', '/mechanics']
     }
     else if (reMech.test(this.props.path)) {
       leftDice = [die1, die3]
       tooltipLeftDice = ['start', 'seminar']
-      leftDiceLinks = ['/', 'seminar']
+      leftDiceLinks = ['/', '/seminar']
     }
 
     if (this.props.path === '/seminar' || reMech.test(this.props.path)) {

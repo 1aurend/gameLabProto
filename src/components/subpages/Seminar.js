@@ -10,10 +10,10 @@ function Seminar (props) {
 
   return(
       <div className="biggrid" style={{backgroundColor: '#e2af3b'}}>
-        <div id='subpagetitle'>
-          <img src={gameLab} alt='gameLab'style={{height: '35%', paddingTop: '5%', paddingLeft: '18%'}}/>
-          <h1 style={{color: '#e2af3b', paddingLeft: '7%'}}>the seminar</h1>
-        </div>
+      <div id='mechanicstitle'>
+        <img src={gameLab} alt='gameLab' className='gameLab' style={{maxHeight: '50%'}}/>
+        <div className='pageTitle'><h1 style={{color: '#e2af3b'}}>the seminar</h1></div>
+      </div>
         <div id='subpageDiceNav'>
           <DiceNav path={props.location.pathname}/>
         </div>

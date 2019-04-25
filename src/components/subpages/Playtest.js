@@ -9,9 +9,9 @@ function Playtest (props) {
 
   return(
       <div className="reallybiggrid" style={{backgroundColor: '#30AEA4'}}>
-        <div id='subpagetitle'>
-          <img src={gameLab} alt='gameLab'style={{height: '35%', paddingTop: '5%', paddingLeft: '18%'}}/>
-          <h1 style={{color: '#30AEA4', fontSize: '250%', marginLeft: '7%'}}>playtest your assignment</h1>
+        <div id='mechanicstitle'>
+          <img src={gameLab} alt='gameLab' className='gameLab' style={{maxHeight: '50%'}}/>
+          <div className='pageTitle'><h1 style={{color: '#30AEA4', fontSize: '3.5rem', paddingTop: '0'}}>playtest your assignment</h1></div>
         </div>
         <div id='subpageDiceNav'>
           <DiceNav path={props.location.pathname}/>

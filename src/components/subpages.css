@@ -5,7 +5,7 @@ html, body {
 
 .biggrid{
   display: grid;
-  grid-template-columns: repeat(9, 1fr);
+  grid-template-columns: .5fr 1fr .5fr repeat(3, 1fr) .5fr 1fr .5fr;
   grid-template-rows: repeat(15, 1fr);
   /* grid-template-rows: 110px 110px 110px 110px 110px 110px 110px 110px 700px; */
   width: 100%;
@@ -14,7 +14,7 @@ html, body {
 
 .reallybiggrid{
   display: grid;
-  grid-template-columns: repeat(9, 1fr);
+  grid-template-columns: .5fr 1fr .5fr repeat(3, 1fr) .5fr 1fr .5fr;
   grid-template-rows: repeat(39, 1fr);
   /* grid-template-rows: 110px 110px 110px 110px 110px 110px 110px 110px 700px; */
   width: 100%;
