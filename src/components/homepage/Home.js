@@ -53,7 +53,7 @@ class Home extends Component {
 
   render() {
     return (
-          <div className='ninegrid' style={{backgroundColor: this.state.color}}>
+          <div className='ninegridOriginal' style={{backgroundColor: this.state.color}}>
             <div id='title'>
               <Title />
             </div>

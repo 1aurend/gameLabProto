@@ -44,9 +44,13 @@ class DiceNav extends Component {
     let leftDiceLinks;
     let rightDiceLinks;
     let reMech = /^\/mechanics/
+    let reTools = /^\/tools/
+    let reSem = /^\/seminar/
+    let reEx = /^\/examples/
+
     console.log('here is path: ' + this.props.path);
 
-    if (this.props.path === '/seminar' || this.props.path === '/playtest' || this.props.path === '/examples') {
+    if (reSem.test(this.props.path) || reTools.test(this.props.path) || reEx.test(this.props.path)) {
       leftDice = [die1, die2]
       tooltipLeftDice = ['start', 'mechanics']
       leftDiceLinks = ['/', '/mechanics']
@@ -57,20 +61,20 @@ class DiceNav extends Component {
       leftDiceLinks = ['/', '/seminar']
     }
 
-    if (this.props.path === '/seminar' || reMech.test(this.props.path)) {
+    if (reSem.test(this.props.path) || reMech.test(this.props.path)) {
       rightDice = [die4, die5]
       tooltipRightDice = ['tools', 'examples']
-      rightDiceLinks = ['/playtest', '/examples']
+      rightDiceLinks = ['/tools', '/examples']
     }
-    else if (this.props.path === '/playtest' ) {
+    else if (reTools.test(this.props.path)) {
       rightDice = [die3, die5]
       tooltipRightDice = ['seminar', 'examples']
       rightDiceLinks = ['/seminar', '/examples']
     }
-    else if (this.props.path === '/examples' ) {
+    else if (reEx.test(this.props.path) ) {
       rightDice = [die3, die4]
       tooltipRightDice = ['seminar', 'tools']
-      rightDiceLinks = ['/seminar', '/playtest']
+      rightDiceLinks = ['/seminar', '/tools']
     }
 
     var centerColor = this.state.active ? {backgroundColor: '#fcf5eb'} : {backgroundColor: '#fcf5eb'}

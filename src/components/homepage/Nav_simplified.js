@@ -92,7 +92,7 @@ function Nav(props) {
       toolsDemoNav = (
         <div className="navLink">
           <img src={die4inv} alt='dice3' className="navDice" onMouseOver={props.onHover({num:'3', color: '#30AEA4'})} />
-          <Link className="navText" to='/playtest' onMouseOver={props.onHover({num:'3', color: '#30AEA4'})} style={{color:"#fcf5eb"}}>tools demo</Link>
+          <Link className="navText" to='/tools' onMouseOver={props.onHover({num:'3', color: '#30AEA4'})} style={{color:"#fcf5eb"}}>tools demo</Link>
         </div>
       )
     }
@@ -100,7 +100,7 @@ function Nav(props) {
       toolsDemoNav = (
         <div className="navLink">
           <img src={die4} alt='dice3' className="navDice" onMouseOver={props.onHover({num:'3', color: '#30AEA4'})} />
-          <Link className="navText" to='/playtest' onMouseOver={props.onHover({num:'3', color: '#30AEA4'})} style={{color:"#30AEA4"}}>tools demo</Link>
+          <Link className="navText" to='/tools' onMouseOver={props.onHover({num:'3', color: '#30AEA4'})} style={{color:"#30AEA4"}}>tools demo</Link>
         </div>
       )
     }
