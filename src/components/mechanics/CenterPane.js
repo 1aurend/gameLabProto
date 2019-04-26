@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import '../mechanics_grid.css'
 import mechanicsList from './mechanicslist.js'
 import { Link } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 
 
 function findMechanic (name) {
@@ -88,4 +89,4 @@ function CenterPane (props) {
 
 
 
-export default CenterPane;
+export default withRouter(CenterPane);

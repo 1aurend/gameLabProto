@@ -30,7 +30,7 @@ class DiceNav extends Component {
     });
   }
 
-  componentDidMount() {
+  componentWillMount() {
     this.setState({
       path: this.props.path
     });
@@ -48,7 +48,6 @@ class DiceNav extends Component {
     let reSem = /^\/seminar/
     let reEx = /^\/examples/
 
-    console.log('here is path: ' + this.props.path);
 
     if (reSem.test(this.props.path) || reTools.test(this.props.path) || reEx.test(this.props.path)) {
       leftDice = [die1, die2]
@@ -78,8 +77,6 @@ class DiceNav extends Component {
     }
 
     var centerColor = this.state.active ? {backgroundColor: '#fcf5eb'} : {backgroundColor: '#fcf5eb'}
-    console.log(centerColor);
-    console.log(leftDice);
 
 
     return (

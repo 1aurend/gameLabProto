@@ -11,15 +11,20 @@ class MechanicsGrid extends Component {
   constructor(props){
     super(props);
     this.state = {
-      activeMech: props.location.pathname === '/mechanics' || props.location.pathname === '/mechanics/' ? 'mechanics' : props.location.pathname.split('/')[props.location.pathname.split('/').length-1],
+      activeMech: props.mechanic,
       activeMove: false,
     }
     this.onClickMech = this.onClickMech.bind(this)
     this.onClickMove = this.onClickMove.bind(this)
 
-    console.log(props.location.pathname);
-    console.log('activeMech: ' + this.state.activeMech);
   }
+
+  componentDidUpdate(prevProps, prevState) {
+  if (this.props.location !== prevProps.location) {
+     {/*this.setState({ activeMech: this.props.location.pathname === '/mechanics' || this.props.location.pathname === '/mechanics/' ? 'mechanics' : this.props.location.pathname.split('/')[this.props.location.pathname.split('/').length-1]});*/}
+     this.setState({activeMech: this.props.mechanic})
+  }
+}
 
   onClickMech(mech){
     this.setState(
@@ -28,7 +33,6 @@ class MechanicsGrid extends Component {
         activeMove: false,
       }
     );
-    console.log('this is active state: ' + this.state.active);
   }
 
   onClickMove = (move) => (e) => {
@@ -42,13 +46,10 @@ class MechanicsGrid extends Component {
 
   render() {
 
-    console.log('here is activeMech: ' + this.state.activeMech);
-
     let fontColor = ['','','','','','','','']
     fontColor.fill('#fcf5eb', 0, 8)
 
     let theMechanics = ['time', 'space', 'chance', 'action', 'challenge', 'training', 'strategy', 'multiplayer']
-    let pathTest = this.props.location.pathname.split('/')
     for (var i = 0; i < theMechanics.length; i++) {
         if (this.state.activeMech === theMechanics[i]) {
           fontColor[i] = '#7fc8a0'
@@ -100,4 +101,4 @@ class MechanicsGrid extends Component {
 }
 }
 
-export default MechanicsGrid;
+export default (MechanicsGrid);
