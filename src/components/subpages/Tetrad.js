@@ -4,6 +4,7 @@ import playtestpng from '../../assets/playtest-assignment-tall.png'
 import DiceNav from '../dice_nav/DiceNav.js'
 import '../subpages.css'
 import gameLab from '../../assets/dev_subtitle.svg'
+import Collapsible from 'react-collapsible'
 
 function Tetrad (props) {
 
@@ -19,6 +20,15 @@ function Tetrad (props) {
         <div id='seminarBlurb'>
           <p style={{paddingTop: '1rem'}}>Schell’s tetrad is one way of breaking games down into components and analyzing the interactions between them. Analyzing your own classroom in this way is a great first step for thinking like a game designer. You can use the tetrad to analyze your course at the level of an entire syllabus, a single course meeting or unit, or something as small as a single assignment. Each level will yield distinct insights.
           </p>
+          <Collapsible trigger="How do I start?" className='Collapsible__trigger'>
+            <p>This is the collapsible content. It can be any element or React component you like.</p>
+          </Collapsible>
+          <Collapsible trigger="I know what Mechanics are, but what do you mean by the others?" className='Collapsible__trigger'>
+            <p>This is the collapsible content. It can be any element or React component you like.</p>
+          </Collapsible>
+          <Collapsible trigger="I've filled out the tetrad for my class. Now what?" className='Collapsible__trigger'>
+            <p>This is the collapsible content. It can be any element or React component you like.</p>
+          </Collapsible>
         </div>
         <div id='playtestpng'>
           <img src={playtestpng} alt='playtest your assignment' style={{width: '100%'}}/>
