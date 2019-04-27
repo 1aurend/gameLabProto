@@ -79,7 +79,7 @@ class MechanicsGrid extends Component {
     <div>
       <div style={{backgroundColor: background}}>
       </div>
-      <div className="ninegrid" style={{backgroundColor: background}}>
+      <div className="biggrid" style={{backgroundColor: background}}>
         <div id='mechanicstitle'>
           <img src={gameLab} alt='gameLab' className='gameLab' style={{maxHeight: '50%'}}/>
           <div className='pageTitle'><h1 style={{color: background}}>{title}</h1></div>

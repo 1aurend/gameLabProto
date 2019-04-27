@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import '../mechanics_grid.css'
-import mechanicsList from './mechanicslist.js'
+import mechanicsList from './mechanicslist_clean.js'
 import { Link } from 'react-router-dom'
 import { withRouter } from 'react-router-dom'
+import Collapsible from 'react-collapsible'
 
 
 function findMechanic (name) {
@@ -17,26 +18,56 @@ function findMechanic (name) {
   })
 }
 
+function findMove (mech, move) {
+  for (var i = 0; i < mechanicsList.length; i++) {
+    if (mech === mechanicsList[i].name) {
+      for (var j = 0; j < mechanicsList[i].moves.length; j++) {
+        if (move === mechanicsList[i].moves[j].name) {
+          return mechanicsList[i].moves[j];
+        }
+      }
+    }
+  }
+  return ({
+    name: 'coming soon!',
+    what: '',
+    effects: '',
+    examples: '',
+  })
+}
+
 
 function CenterPane (props) {
 
-  let contentUp = findMechanic(props.mechanic);
+  let mechUp = findMechanic(props.mechanic)
+  let moveUp = props.move ? findMove(props.mechanic, props.move) : false
 
-  const movesLinks = contentUp.moves ? contentUp.moves.map((move) => <h5 className='movesLinksText' onClick={props.onClick(move)} key={move}> &nbsp;&nbsp;&nbsp;&nbsp;<span>{move}</span></h5> ) : 'coming soon!'
-  const movesInText = contentUp.moves ? contentUp.moves.map((move) => <li key={move}>{move}</li>) : 'coming soon!'
-  const effects = contentUp.why ? contentUp.why.map((effect) => <li key={effect}>{effect}</li>) : 'coming soon!'
+  const movesLinks = mechUp.moves ? mechUp.moves.map((move) => <h5 className='movesLinksText' onClick={props.onClick(move.name)} key={move.name}> &nbsp;&nbsp;&nbsp;&nbsp;<span>{move.name}</span></h5> ) : 'coming soon!'
+
+  const effects = moveUp.effects ? moveUp.effects.map((effect) =>
+    <Collapsible trigger={effect.what} className='Collapsible__trigger' key={effect.what}>
+      <ul>
+      {effect.how.map((how) => <li key={how}>{how}</li>)}
+      </ul>
+    </Collapsible>)
+     : 'coming soon!'
+
+  const examples = moveUp.examples ? moveUp.examples.map((example) => <li key={example}>{example}</li>) : 'coming soon!'
+
 
   if (props.mechanic === 'mechanics') {
     return (
     <>
-      <div id='movesLinks'>
+      {/*<div id='movesLinks'>
         {movesLinks}
-      </div>
+      </div>*/}
       <div id='activeMech'>
-        {contentUp.name}
+        {mechUp.name}
       </div>
       <div id="centertext">
-        <p>{contentUp.pitch}</p>
+        <p>{mechUp.pitch}</p>
+        <p>{mechUp.structure}</p>
+        <p>{mechUp.go}</p>
       </div>
     </>
     )
@@ -50,13 +81,13 @@ function CenterPane (props) {
         {movesLinks}
       </div>
       <div id='activeMech'>
-        {contentUp.name}
+        {mechUp.name}
       </div>
       <div id="centertext">
         <h5>The Pitch</h5>
-        <p>{contentUp.pitch}</p>
+        <p>{mechUp.pitch}</p>
         <h5>What is it?</h5>
-        <p>{contentUp.what}</p>
+        <p>{mechUp.what}</p>
       </div>
     </>
     )
@@ -70,17 +101,17 @@ function CenterPane (props) {
         {movesLinks}
       </div>
       <div id='activeMech'>
-        {props.move}
+        {props.mechanic}
       </div>
       <div id="centertext">
         <h5>What is it?</h5>
-        <p>{contentUp.pitch}</p>
+        <p>{moveUp.what}</p>
         <h5>What can it do and how?</h5>
-        <p>{contentUp.what}</p>
-        <h5>Examples</h5>
-        <ul>{effects}</ul>
-        <h5>How do I deploy it?</h5>
-        <ul>{movesInText}</ul>
+          {effects}
+        <h5 style={{paddingTop: '10px'}}>Examples</h5>
+        <ul>
+          {examples}
+        </ul>
       </div>
     </>
     )
