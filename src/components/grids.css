@@ -145,6 +145,13 @@ p {
   color: #fcf5eb;
 }
 
+.pLink {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  padding-top: 0px;
+  color: #fcf5eb;
+}
+
 h2 {
   font-family: 'Nunito', sans-serif;
   font-size: 32px;

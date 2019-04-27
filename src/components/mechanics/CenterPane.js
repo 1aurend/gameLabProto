@@ -22,9 +22,9 @@ function CenterPane (props) {
 
   let contentUp = findMechanic(props.mechanic);
 
-  const movesLinks = contentUp.moves ? contentUp.moves.map((move) => <h5 className='movesLinksText' onClick={props.onClick(move)}> &nbsp;&nbsp;&nbsp;&nbsp;<span>{move}</span></h5> ) : 'coming soon!'
-  const movesInText = contentUp.moves ? contentUp.moves.map((move) => <li>{move}</li>) : 'coming soon!'
-  const effects = contentUp.why ? contentUp.why.map((effect) => <li>{effect}</li>) : 'coming soon!'
+  const movesLinks = contentUp.moves ? contentUp.moves.map((move) => <h5 className='movesLinksText' onClick={props.onClick(move)} key={move}> &nbsp;&nbsp;&nbsp;&nbsp;<span>{move}</span></h5> ) : 'coming soon!'
+  const movesInText = contentUp.moves ? contentUp.moves.map((move) => <li key={move}>{move}</li>) : 'coming soon!'
+  const effects = contentUp.why ? contentUp.why.map((effect) => <li key={effect}>{effect}</li>) : 'coming soon!'
 
   if (props.mechanic === 'mechanics') {
     return (
@@ -42,7 +42,7 @@ function CenterPane (props) {
     )
   }
 
-  else if (!props.move && props.mechanic != 'mechanics') {
+  else if (!props.move && props.mechanic !== 'mechanics') {
 
     return (
     <>

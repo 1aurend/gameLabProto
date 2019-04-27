@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const about = (
   <>
@@ -25,11 +25,11 @@ const toolsDemo = (
     <h5>tools demo</h5>
     <p>Ready to try out our toolkit? Here are three ways to get started:</p>
     <br />
-    <p style={{fontWeight: "bold"}}>“Playtest” Your Assignment</p>
+    <Link className='pLink' to='/tools/playtest' style={{fontWeight: "bold"}}>“Playtest” Your Assignment</Link>
     <p>Use these questions to think like a game designer about an already existing assignment or class activity and up the assignment’s XP.</p>
-    <p style={{fontWeight: "bold"}}>The Tetrad</p>
+    <Link className='pLink' to='/tools/tetrad' style={{fontWeight: "bold"}}>The Tetrad</Link>
     <p>Game designer Jesse Schell uses a tetrad to break down games into their component elements. Not surprisingly, analyzing classes using this tetrad leads to key insights about how they work.</p>
-    <p style={{fontWeight: "bold"}}>Design Challenges</p>
+    <Link className='pLink' to='/tools/challenges' style={{fontWeight: "bold"}}>Design Challenges</Link>
     <p>Not sure where to begin? Try out some of the design challenges we used in our seminar for crafting game-infused assignments.</p>
   </>
 )
