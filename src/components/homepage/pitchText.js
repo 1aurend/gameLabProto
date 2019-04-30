@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 const about = (
   <>
-    <h5>Welcome to gameLab! The Learning Lab’s handbook on game design for teachers.</h5>
-    <p>So why game design? Well, have you ever been disappointed by a class you were really excited about? It probably wasn’t the course content that bored you; it more likely had something to do with how your experience as a student was crafted: Were the assignments too hard or too easy? Were there not enough different ways to engage the material? Did the physical space of the classroom not fit the activities the class engaged in? If these are the sorts of things that make or break the student experience, then we as teachers should look to others who spend a lot of time thinking about and crafting experiences, and game designers seem to be the people doing this most successfully. The video game industry has outgrown all other forms of entertainment in terms of market share. The power of a game design perspective is that it puts the user experience at the center. This is hugely powerful in increasing motivation and engagement.</p>
-    <p>This website provides tools for applying the logic of games to the classroom, not to turn the classroom into a game, but so that we can be intentional about centering experience in our instructional design.</p>
+    <h5>Welcome to gameLab! The Learning Lab’s game design toolbox for teachers.</h5>
+    <p>So why game design? On one fundamental level, game designers and teachers do the same thing-design experiences. Of course, they design (arguably) different kinds of experiences, but game designers seem to be the most successful experience crafters out there-just look at the market share of games! Thus, we as teachers have a lot to learn from their toolkit for crafting dynamic, challenging experiences, which put users at the center.</p>
+    <p>The tools here apply the logic of games to the classroom, not to turn the classroom into a game, but so that we can be intentional about centering experience in our instructional design.</p>
   </>
 )
 
@@ -13,7 +13,7 @@ const about = (
 const theMechanics = (
   <>
     <h5>the mechanics</h5>
-    <p>Mechanics are the interactions and relationships that make a game a system. Mechanics are what make a game interactive rather than entertainment you just take in. Put simply, mechanics are what make a game work. For this reason, designing with mechanics in mind is the key way teachers can apply the logic of game design to the classroom.</p>
+    <p>Mechanics are the interactions and relationships that make a game a system. They make the game interactive rather than something you just take in. Put simply, mechanics are what make a game work. For this reason, mechanics are the key way teachers can apply the logic of game design to the classroom.</p>
     <p>Use our mechanic inventory to explore implementing game mechanics in your class.</p>
     <Link className='navText' to='/mechanics' style={{color:"#fcf5eb", paddingLeft: '40%'}}>go!</Link>
   </>

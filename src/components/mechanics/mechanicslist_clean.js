@@ -231,6 +231,176 @@ const mechanicsList = [
         },
       ],
   },
+  {
+    name: 'challenge',
+    pitch: 'You’re no doubt thinking about challenge already. Challenge, you might think, is a prerequisite for learning. But most often as teachers, we think about challenge in terms of the material we’re presenting to students. How difficult is this text to parse? How complex is this problem? Considering challenge instead from the perspective of a game designer focuses attention not only on the determinants of difficulty level but more importantly on how those determinants can be modified both in development by the designer and during play by the player.',
+    what: 'Game designers think a lot about balance. A game with too many rules is imbalanced; a game that takes too long is disproportional; a game that’s too hard or too easy is, well, no fun. A match between a player’s skill level and the game’s difficulty is one key factor in determining how engaged that player will be. Players that aren’t challenged enough will get bored, while player’s that lack skills necessary to play will be frustrated. When game designers consider challenge, they consider it on at least two continuums: First, from the novice player to the expert. Who should be able to play this game? What means can the game employ to balance accessibility for novices versus depth for more experienced players? Second, from start to finish. How will the game grow with the player to keep them continually challenged? Where will replay value come from?',
+    moves:
+    [
+      {
+        name: 'level up',
+        what: 'Leveling up is just what it sounds like. Games use a variety of measures of competence to determine that players are ready to move onto the next challenge. It might be a matter of completing a stage, a level or quest, or instead it might mean successfully executing a key skill, performing a move or solving a puzzle. In both sorts of cases, games use these checkpoints to ensure that players are pacing themselves appropriately, neither taking on levels that will be frustratingly difficult nor bored and unable to move on when a challenge is too easy.',
+        effects:
+        [
+          {
+            what: 'Increase approachability',
+            how:
+            [
+              'Allow students to start at a base level and work their way up to make getting started easier',
+            ],
+          },
+          {
+            what: 'Make successes cumulative',
+            how:
+            [
+              'Use mastery checkpoints to help students see how small things they are doing build to a larger skill or whole',
+            ],
+          },
+          {
+            what: 'Create a sense of autonomy',
+            how:
+            [
+              'Optional leveling up and/or giving students some discretion in how long they spend working on one stage before demonstrating proficiency and moving onto the next contributes to agency',
+            ],
+          },
+          {
+            what: 'Provide checkpoints or pacing',
+            how:
+            [
+              'Distinct steps on the way to skill development help students see their trajectories',
+              'Associating checkpoints with anticipated timelines or deadlines can be a form of progress tracking'
+            ],
+          },
+          {
+            what: 'Reinforce skill hierarchies',
+            how:
+            [
+              'Make one step a prerequisite for another to signals an ordering',
+              'Have successive “levels” explicitly build on one another, so students know which skills they are repeatedly using',
+            ],
+          },
+        ],
+      },
+      {
+        name: 'level choices',
+        what: 'Many games give players a choice about how challenging they want the game to be. This might take the form of an explicit selection of “easy” or “normal” modes at the start of the game. Or it might involve a choice of character or vehicle or how many cards to deal at the start, and so on. Such choices make a game accessible for players with a range of skills. They also allow players to pace themselves as they develop their competence.',
+        effects:
+        [
+          {
+            what: 'Increase approachability',
+            how:
+            [
+              'Multiple entry points can make it easier to get started; there will be a task that seems “doable” ',
+            ],
+          },
+          {
+            what: 'Create a sense of autonomy',
+            how:
+            [
+              'Optional leveling up and/or giving students some discretion in how long they spend working on one stage before demonstrating proficiency and moving onto the next contributes to agency',
+              'While everyone needs to get through the “hardest” level to complete the assignment, perhaps not everyone needs to complete the “easy” levels first'
+            ],
+          },
+          {
+            what: 'Establish stakes or expectations',
+            how:
+            [
+              'Use the “levels” of an assignment as a rubric to demonstrate to students what you consider proficiency, mastery, and so on'
+            ],
+          },
+          {
+            what: 'Allow student-driven pacing',
+            how:
+            [
+              'Give students some flexibility in how long they spend on each level to build confidence',
+              'Provide workload flexibility through optional easier levels',
+            ],
+          },
+        ],
+      },
+      {
+        name: 'layers',
+        what: 'Games use layers of increasing challenge to expand the range of player skill-level appropriate for the game. For example, a role playing game might have many additional side quests in addition to a main storyline; only finishing the main story is required to beat the game, but the side quests keep more experienced players playing longer and can be more difficult than the core game. Of course, our goal in teaching is not necessarily to keep students focused on our coursework for as much time as possible, and the curriculum itself consists of layers-more advanced courses, focused electives. But the move of layering asks us to consider how we might add ways for students to push themselves, especially in required courses where there might be a wide range of student backgrounds.',
+        effects:
+        [
+          {
+            what: 'Increase approachability',
+            how:
+            [
+              'Include a variety of applications of core content for student to explore to motivate a broader range of students',
+              'Use layers to create multiple moments of success; not having to complete everything in one go can a project seem more doable'
+            ],
+          },
+          {
+            what: 'Motivate and center focus',
+            how:
+            [
+              'Use additional layers to keep ensure students who are moving faster than the majority of the group feel challenged, e.g. additional vocabulary or storytelling challenges for students in a language class',
+            ],
+          },
+          {
+            what: 'Create or diminish sense of autonomy',
+            how:
+            [
+              'Allow students a choice of which additional modules to complete following a core module to increase the sense of agency',
+              'Let students decide how many “layers” of an assignment to tackle in a single unit of work; perhaps all the questions could be answered collectively in a single essay, podcast, etc. but another approach might involve answering them sequentially in a series of infographics'
+            ],
+          },
+          {
+            what: 'Foster competition',
+            how:
+            [
+              'Start an explicit competition to motivate students to complete “side quests” in your course',
+            ],
+          },
+        ],
+      },
+      {
+        name: 'fast forward',
+        what: 'Most video games include a training module or low stakes first level to introduce novice players to the game. Experienced players, however, may get quickly bored with these sections. To keep these players engaged, game designers often provide a means by which they can quickly show proficiency with game basics and move through quickly. While one might argue that placement tests perform this function in curricula, are there other ways to provide extra challenge or new opportunities to students with greater background?',
+        effects:
+        [
+          {
+            what: 'Increase motivation',
+            how:
+            [
+              'Allow students to show mastery of initial steps and move on to avoid boredom',
+              'Let students who have mastered the basics help teach peers who are newer to the material'
+            ],
+          },
+          {
+            what: 'Create a sense of autonomy',
+            how:
+            [
+              'Let students determine (within a range) the pace at which they work through basic modules to increase agency'
+            ],
+          },
+        ],
+      },
+      {
+        name: 'boosts',
+        what: 'Sometimes games have ways of giving less-skilled players a boost. Boosts both help ensure that players won’t give up too soon and make it more fun for less and more experienced players to play together. Nintendo games are known for this: better power-ups for racers in last place; invincibility suits after losing a certain amount of lives in the same level. In the classroom, of course, we’d want to be careful of any boost that allowed students to skip ahead without mastering the material, but we can still incorporate some mechanics that help to achieve this balance.',
+        effects:
+        [
+          {
+            what: 'Increase approachability',
+            how:
+            [
+              'Knowing there’s a mechanism in place to help in case of frustration can make it easier to attempt something difficult; a hint or viewable solution to a similar problem that’s available after a certain number of attempts can function this way',
+            ],
+          },
+          {
+            what: 'Reduce frustration',
+            how:
+            [
+              'Use quiz or pset retakes to help students never feel like they’re so far behind they can’t catch up and emphasize mastery over speed',
+              'Where appropriate, assign work based on time to complete rather than volume, e.g. have students with more fluency translate longer paragraphs and those with less shorter'
+            ],
+          },
+        ],
+      },
+    ],
+  },
 ]
 
 export default mechanicsList;

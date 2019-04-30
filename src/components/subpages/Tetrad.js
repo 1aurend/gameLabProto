@@ -1,6 +1,6 @@
 import React from 'react';
 import '../grids.css'
-import playtestpng from '../../assets/playtest-assignment-tall.png'
+import tetrad from '../../assets/color-tetrad-new.png'
 import DiceNav from '../dice_nav/DiceNav.js'
 import '../subpages.css'
 import gameLab from '../../assets/dev_subtitle.svg'
@@ -31,7 +31,7 @@ function Tetrad (props) {
           </Collapsible>
         </div>
         <div id='playtestpng'>
-          <img src={playtestpng} alt='playtest your assignment' style={{width: '100%'}}/>
+          <img src={tetrad} alt='playtest your assignment' style={{width: '100%'}}/>
         </div>
       </div>
 )

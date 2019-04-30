@@ -42,7 +42,30 @@ function CenterPane (props) {
   let mechUp = findMechanic(props.mechanic)
   let moveUp = props.move ? findMove(props.mechanic, props.move) : false
 
-  const movesLinks = mechUp.moves ? mechUp.moves.map((move) => <h5 className='movesLinksText' onClick={props.onClick(move.name)} key={move.name}> &nbsp;&nbsp;&nbsp;&nbsp;<span>{move.name}</span></h5> ) : 'coming soon!'
+  let movesColors = []
+  if (props.mechanic !== 'mechanics' && mechUp.moves) {
+    for (var i = 0; i < mechUp.moves.length; i++) {
+      if (mechUp.moves[i].name === props.move) {
+        let move =
+        {
+          name: mechUp.moves[i].name,
+          color: '#e2af3b',
+        }
+        movesColors.push(move)
+      }
+      else {
+        let move =
+        {
+          name: mechUp.moves[i].name,
+          color: '#7fc8a0',
+        }
+        movesColors.push(move)
+      }
+    }
+  }
+
+
+  const movesLinks = mechUp.moves ? movesColors.map((move) => <h5 className='movesLinksText' onClick={props.onClick(move.name)} key={move.name} style={{color: move.color}}> &nbsp;&nbsp;&nbsp;&nbsp;<span>{move.name}</span></h5> ) : 'coming soon!'
 
   const effects = moveUp.effects ? moveUp.effects.map((effect) =>
     <Collapsible trigger={effect.what} className='Collapsible__trigger' key={effect.what}>
@@ -108,10 +131,10 @@ function CenterPane (props) {
         <p>{moveUp.what}</p>
         <h5>What can it do and how?</h5>
           {effects}
-        <h5 style={{paddingTop: '10px'}}>Examples</h5>
+        {/*<h5 style={{paddingTop: '10px'}}>Examples</h5>
         <ul>
           {examples}
-        </ul>
+        </ul>*/}
       </div>
     </>
     )
