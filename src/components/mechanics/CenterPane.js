@@ -81,13 +81,10 @@ function CenterPane (props) {
   if (props.mechanic === 'mechanics') {
     return (
     <>
-      {/*<div id='movesLinks'>
-        {movesLinks}
-      </div>*/}
       <div id='activeMech'>
         {mechUp.name}
       </div>
-      <div id="centertext">
+      <div id="landingtext">
         <p>{mechUp.pitch}</p>
         <p>{mechUp.structure}</p>
         <p>{mechUp.go}</p>

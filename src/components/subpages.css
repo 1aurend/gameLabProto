@@ -74,3 +74,46 @@ html, body {
   cursor: pointer;
   height: 20px;
 }
+
+#challengetext {
+  grid-column: 1 / span 3;
+  grid-row: 2 / span 4;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* #booklinks {
+  grid-column: 1 / span 3;
+  grid-row: 4 / span 6;
+  margin-left: auto;
+  margin-right: auto;
+} */
+#schell {
+  grid-column: 1 / span 1;
+  grid-row: 4 / span 2;
+  /* padding: 5px; */
+}
+#schell>img {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100%;
+}
+#gee {
+  grid-column: 2 / span 1;
+  grid-row: 4 / span 2;
+  /* padding: 5px; */
+}
+#gee>img {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100%;
+}
+#sylvester {
+  grid-column: 3 / span 1;
+  grid-row: 4 / span 2;
+  /* padding: 5px; */
+}
+#sylvester>img {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100%;
+}

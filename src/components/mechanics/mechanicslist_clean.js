@@ -401,6 +401,11 @@ const mechanicsList = [
       },
     ],
   },
+  {
+  name: "space",
+  pitch: "Like time, space is a mechanic you can’t leave out of your teaching. Your class takes place in a space, and while you may not always get to choose which space this is, you can shift the balance between how much you leverage your space and how much it imposes on your class. Space mechanics cover many elements of the classroom, from seating arrangements for different types of conversations to mapping techniques that take place on a board or in a digital space. There are many spaces to explore!",
+  what: 'For game designers, spaces are physical, virtual, and metaphorical. But more important than the type of space, is the relations and interactions between its meaningful units. For example, the size of the squares on a tic-tac-toe board is does not affect the game. What matters is their alignment. In contrast, the distances a player has to jump to cross gaps in a platforming game make all the difference. Thus, when we think about space as a mechanic in the classroom, we can consider not only the size of the room and its furnishings, but also whether there are any meaningful relations between parts of the space and course content or particular activities and how we can carve out units of meaningful space to lead to ordered and relational understanding.',
+},
 ]
 
 export default mechanicsList;

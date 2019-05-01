@@ -33,7 +33,7 @@ const NavSwitch = () => (
       <Route path='/tools/playtest' component={Playtest}/>
       <Route path='/tools/tetrad' component={Tetrad}/>
 
-      <Route exact path='/tools/challenges' render={(props) => <MechanicsGrid {...props} dChallenges={true} backgroundColor={'#30AEA4'}/>}/>
+      <Route exact path='/tools/challenges' render={(props) => <MechanicsGrid {...props} dChallenges={true} mechanic={'challenges'} backgroundColor={'#30AEA4'}/>}/>
       <Route path='/tools/challenges/time' render={(props) => <MechanicsGrid {...props} dChallenges={true} mechanic={'time'} backgroundColor={'#30AEA4'}/>}/>
       <Route path='/tools/challenges/space' render={(props) => <MechanicsGrid {...props} dChallenges={true} mechanic={'space'} backgroundColor={'#30AEA4'}/>}/>
       <Route path='/tools/challenges/chance' render={(props) => <MechanicsGrid {...props} dChallenges={true} mechanic={'chance'} backgroundColor={'#30AEA4'}/>}/>
