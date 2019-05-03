@@ -405,7 +405,102 @@ const mechanicsList = [
   name: "space",
   pitch: "Like time, space is a mechanic you can’t leave out of your teaching. Your class takes place in a space, and while you may not always get to choose which space this is, you can shift the balance between how much you leverage your space and how much it imposes on your class. Space mechanics cover many elements of the classroom, from seating arrangements for different types of conversations to mapping techniques that take place on a board or in a digital space. There are many spaces to explore!",
   what: 'For game designers, spaces are physical, virtual, and metaphorical. But more important than the type of space, is the relations and interactions between its meaningful units. For example, the size of the squares on a tic-tac-toe board is does not affect the game. What matters is their alignment. In contrast, the distances a player has to jump to cross gaps in a platforming game make all the difference. Thus, when we think about space as a mechanic in the classroom, we can consider not only the size of the room and its furnishings, but also whether there are any meaningful relations between parts of the space and course content or particular activities and how we can carve out units of meaningful space to lead to ordered and relational understanding.',
+  moves: [
+    {
+      name: 'maps',
+    },
+    {
+      name: 'stations',
+    },
+    {
+      name: 'movement',
+    },
+    {
+      name: 'leaving',
+    },
+    {
+      name: 'mental space',
+    }
+  ]
 },
+  {
+    name: 'multiplayer',
+    pitch: 'Multiplayer is one of the easiest mechanics to use. Every classroom is inherently set up to be multiplayer: you have many people working on the same task, all trying to achieve the same thing. Moreover, multiplayer experiences encourage peer-peer learning, teamwork skills, negotiation and strategy, and allow students to create substantial volumes of work in a short period of time. Making an experience multiplayer often adds a valuable element of realism, reflecting various stakeholders and team dynamics in work. It allows students to both specialise their own work within the group whilst learning from the implications and task processes of different ideas, work-approaches, and attitudes of their peers’ roles.',
+    what: `Broadly speaking, multiplayer games fall into two categories: competitive games and cooperative ones. Competitive games pit players against each other. Classic board games like Chess and Monopoly fit this mold and so often do racing and fighting video games. Cooperative, or "co-op" games, on the other hand, require players to team up to complete missions, solve puzzles, or reach places unreachable in single-player mode. Competitive games tap into players' desire to win, and allow players to continue to challenge themselves by competing against ever stronger opponents. Co-ops drive a different sort of social interaction in which players must negotiate, coordinate, and strategize together in order to succeed.`,
+    moves: [
+      {
+        name: 'competition',
+      },
+      {
+        name: 'co-op',
+      }
+    ]
+  },
+  {
+    name: 'chance',
+    pitch: '',
+    what: '',
+    moves: [
+      {
+        name: 'roll',
+      },
+      {
+        name: 'spin',
+      },
+      {
+        name: 'draw',
+      },
+      {
+        name: 'risk'
+      }
+    ],
+  },
+  {
+    name: 'training',
+    pitch: 'Training modules should not be framed as easy stuff then harder stuff. Training modules are about building good habits, extensive well-timed strategies, and setting smart expectations. Equally, training modules are never drills, decontextualized repetition of set knowledge for memorisation. Training modules are about layering knowledge in a well-curated way to maximise player independence later in the game. Since the fact is, almost every class is already set up either as one large training module, as a series of skill-specific training modules, or as both, the principles driving a well-designed training module are fundamental to improving the student experience.',
+    what: `In video games, training models have three key features: (1) they teach a curated, concentrated sample of the skills the player needs to succeed later on; (2) they encourage learning from failure and are very low stakes; and (3) they contextualize the player's learning in a microcosm of the worlds the player is about to encounter. Together, these three features make training modules extremely efficient at getting new players up to speed with at least the minimum level of competence needed to progress and enjoy the game.`,
+    moves: [
+      {
+        name: 'curated samples'
+      },
+      {
+        name: 'low stakes'
+      },
+      {
+        name: 'microcosms'
+      }
+    ]
+  },
+  {
+    name: 'strategy',
+    pitch: `Strategy follows action. If action as a mechanic focuses on the verbs, strategy is about how those verbs are structured into approaches and plans. Ultimately, just as game designers are looking to create games where a diversity of strategies and approaches to acheiving the end goal emerge out the basic rules and actions of gameplay, so too in many classroom contexts are we looking to give students a toolkit of skills, which they can implement in a variety of ways to approach a wide range of questions and data. Considering course content from the perspective of strategy allows us to focus on when and how to foster a variety of approaches.`,
+    what: `Strategies are made up of a series of actions, which typically extend beyond a single turn or session of play. Some games have a single, dominant strategy. We often call such games puzzles. Once a player learns this strategy the game is solved and no longer engaging; the player has mastered the game. More typical games allow for multiple approaches leading to a diversity of outcomes and opportunites for replay.`,
+    moves: [
+      {
+        name: 'something',
+      },
+      {
+        name: 'something else'
+      }
+    ],
+  },
+  {
+    name: 'action',
+    pitch: `As a mechanic, action moves us from thinking about the world of the game- What spaces does it take place in? What times? How will be train players?- to focusing on the players themselves. What can and can't they do? Are there enough open moves for players to develop multiple strategies? Of course, in the classroom we have at least two sets of moves available to teachers and learners: the academic moves, things like analyze, interpret, compare, and so on, and the social moves of interacting with others in class. Approaching your classroom by focusing on its verbs of all types can help clarify what students are doing and add dyanmism to everyone's interactions.` ,
+    what: `As suggested above, actions are perhaps the most dynamic of mechanics. They are the things players can and cannot do. A checker can move one square forward or jump another piece, but it cannot move backward until it has been made a king. Thus, actions are the verbs of games, and which verbs are available to players determines not only how much variety there will be in gameplay and how many strategies will emerge, but also how complex the game is to learn. A game with too many or too few actions, or actions that don't combine well together risks becoming boring or tedious.`,
+    moves:
+      [
+        {
+          name: 'verbs',
+        },
+        {
+          name: 'more verbs',
+        },
+        {
+          name: 'even more verbs',
+        },
+      ]
+    }
 ]
 
 export default mechanicsList;
