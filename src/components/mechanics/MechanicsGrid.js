@@ -41,26 +41,20 @@ class MechanicsGrid extends Component {
       activeMech: props.mechanic,
       activeMove: false,
     }
-    this.onClickMech = this.onClickMech.bind(this)
-    this.onClickMove = this.onClickMove.bind(this)
+    this.onClick = this.onClick.bind(this)
 
   }
 
   componentDidUpdate(prevProps, prevState) {
   if (this.props.location !== prevProps.location) {
-     this.setState({activeMech: this.props.mechanic})
+     this.setState({
+       activeMech: this.props.mechanic,
+       activeMove: false,
+     })
   }
 }
 
-  onClickMech(mech){
-    this.setState(
-      {
-        activeMove: false,
-      }
-    );
-  }
-
-  onClickMove = (move) => (e) => {
+  onClick = (move) => (e) => {
     this.setState(
       {
         activeMove: move,
@@ -81,7 +75,7 @@ class MechanicsGrid extends Component {
       linkPath = '/tools/challenges/'
     }
     else {
-      center = <CenterPane mechanic={this.state.activeMech} move={this.state.activeMove} onClick={(e) => this.onClickMove(e)} />
+      center = <CenterPane mechanic={this.state.activeMech} move={this.state.activeMove} onClick={(e) => this.onClick(e)} />
       title = 'the mechanics'
       linkPath = '/mechanics/'
     }
@@ -155,8 +149,8 @@ class MechanicsGrid extends Component {
     <div>
       <div className="biggrid" style={{backgroundColor: background}}>
         <div id='mechanicstitle'>
-          <div id='titleimg'></div>
-          <div className='pageTitle'><h1 style={{color: background}}>{title}</h1></div>
+          <Link to='/'><div id='titleimg'></div></Link>
+          <div className='pageTitle'><Link to='/mechanics'><h1 style={{color: background}}>{title}</h1></Link></div>
           <div id='diceNav'>
             <DiceNav path={this.props.location.pathname}/>
           </div>
@@ -167,37 +161,37 @@ class MechanicsGrid extends Component {
         </div>
         <div id='dotsleftstrip'></div>
         <div id='dotsrightstrip'></div>
-        <div class='grid9mech' id='mechanic1'>
-          <img src={gridColors.time.svg} alt='hourglass' />
-          <Link className="mechLink" to={linkPath + 'time'} onClick={(e) => this.onClickMech('time', e)} style={{color: gridColors.time.font}}>Time</Link>
+        <div className='grid9mech' id='mechanic1'>
+          <Link to={linkPath + 'time'}><img src={gridColors.time.svg} alt='hourglass' /></Link>
+          <Link className="mechLink" to={linkPath + 'time'} style={{color: gridColors.time.font}}>Time</Link>
         </div>
-        <div class='grid9mech' id="mechanic2">
-          <img src={gridColors.space.svg} alt='checkerboard' />
-          <Link className="mechLink" to={linkPath + 'space'} onClick={(e) => this.onClickMech('space', e)} style={{color: gridColors.space.font}}>Space</Link>
+        <div className='grid9mech' id="mechanic2">
+          <Link to={linkPath + 'space'}><img src={gridColors.space.svg} alt='checkerboard' /></Link>
+          <Link className="mechLink" to={linkPath + 'space'} style={{color: gridColors.space.font}}>Space</Link>
         </div>
-        <div class='grid9mech' id='mechanic3'>
-          <img src={gridColors.chance.svg} alt='hand of cards' />
-          <Link className="mechLink" to={linkPath + 'chance'} onClick={(e) => this.onClickMech('chance', e)} style={{color: gridColors.chance.font}}>Chance</Link>
+        <div className='grid9mech' id='mechanic3'>
+          <Link to={linkPath + 'chance'}><img src={gridColors.chance.svg} alt='hand of cards' /></Link>
+          <Link className="mechLink" to={linkPath + 'chance'} style={{color: gridColors.chance.font}}>Chance</Link>
         </div>
-        <div class='grid9mech' id="mechanic4">
-          <img src={gridColors.action.svg} alt='dominos' />
-          <Link className="mechLink" to={linkPath + 'action'} onClick={(e) => this.onClickMech('action', e)} style={{color: gridColors.action.font}}>Action</Link>
+        <div className='grid9mech' id="mechanic4">
+          <Link to={linkPath + 'action'}><img src={gridColors.action.svg} alt='dominos' /></Link>
+          <Link className="mechLink" to={linkPath + 'action'} style={{color: gridColors.action.font}}>Action</Link>
         </div>
-        <div class='grid9mech' id="mechanic5">
-          <img src={gridColors.challenge.svg} alt='mountain' />
-          <Link className="mechLink" to={linkPath + 'challenge'} onClick={(e) => this.onClickMech('challenge', e)} style={{color: gridColors.challenge.font}}>Challenge</Link>
+        <div className='grid9mech' id="mechanic5">
+          <Link to={linkPath + 'challenge'}><img src={gridColors.challenge.svg} alt='mountain' /></Link>
+          <Link className="mechLink" to={linkPath + 'challenge'} style={{color: gridColors.challenge.font}}>Challenge</Link>
         </div>
-        <div class='grid9mech' id="mechanic6">
-          <img src={gridColors.training.svg} alt='checkerboard' />
-          <Link className="mechLink" to={linkPath + 'training'} onClick={(e) => this.onClickMech('training', e)} style={{color: gridColors.training.font}}>Training</Link>
+        <div className='grid9mech' id="mechanic6">
+          <Link to={linkPath + 'training'}><img src={gridColors.training.svg} alt='checkerboard' /></Link>
+          <Link className="mechLink" to={linkPath + 'training'} style={{color: gridColors.training.font}}>Training</Link>
         </div>
-        <div class='grid9mech' id="mechanic7">
-          <img src={gridColors.strategy.svg} alt='chess knight' />
-          <Link className="mechLink" to={linkPath + 'strategy'} onClick={(e) => this.onClickMech('strategy', e)} style={{color: gridColors.strategy.font}}>Strategy</Link>
+        <div className='grid9mech' id="mechanic8">
+          <Link to={linkPath + 'strategy'}><img src={gridColors.strategy.svg} alt='chess knight' /></Link>
+          <Link className="mechLink" to={linkPath + 'strategy'} style={{color: gridColors.strategy.font}}>Strategy</Link>
         </div>
-        <div class='grid9mech' id="mechanic8">
-          <img src={gridColors.multiplayer.svg} alt='controllers' />
-          <Link className="mechLink" to={linkPath + 'multiplayer'}onClick={(e) => this.onClickMech('multiplayer', e)} style={{color: gridColors.multiplayer.font}}>Multiplayer</Link>
+        <div className='grid9mech' id="mechanic7">
+          <Link to={linkPath + 'multiplayer'}><img src={gridColors.multiplayer.svg} alt='controllers' /></Link>
+          <Link className="mechLink" to={linkPath + 'multiplayer'} style={{color: gridColors.multiplayer.font}}>Multiplayer</Link>
         </div>
       </div>
 </div>

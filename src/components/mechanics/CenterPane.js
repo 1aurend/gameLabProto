@@ -4,6 +4,7 @@ import mechanicsList from './mechanicslist_clean.js'
 import { Link } from 'react-router-dom'
 import { withRouter } from 'react-router-dom'
 import Collapsible from 'react-collapsible'
+import wipsvg from '../../assets/wip_gold.svg'
 
 
 function findMechanic (name) {
@@ -12,10 +13,6 @@ function findMechanic (name) {
       return mechanicsList[i];
     }
   }
-  return ({
-    name: 'coming soon!',
-    pitch: "Mechanics are the interactions and relationships that make a game a system. Mechanics are what make a game interactive rather than entertainment you just take in. Put simply, mechanics are what make a game work. For this reason, designing with mechanics in mind is the key way teachers can apply the logic of game design to the classroom.",
-  })
 }
 
 function findMove (mech, move) {
@@ -38,6 +35,9 @@ function findMove (mech, move) {
 
 
 function CenterPane (props) {
+
+  console.log('here is mech: ' + props.mechanic);
+  console.log('here is move: ' + props.move);
 
   let mechUp = findMechanic(props.mechanic)
   let moveUp = props.move ? findMove(props.mechanic, props.move) : false
@@ -101,7 +101,7 @@ function CenterPane (props) {
         {movesLinks}
       </div>
       <div id='activeMech'>
-        {mechUp.name}
+        {props.mechanic}
       </div>
       <div id="centertext">
         <h5>The Pitch</h5>
@@ -113,7 +113,7 @@ function CenterPane (props) {
     )
   }
 
-  else if (props.move) {
+  else if (props.move && effects !== 'coming soon!') {
 
     return (
     <>
@@ -121,17 +121,30 @@ function CenterPane (props) {
         {movesLinks}
       </div>
       <div id='activeMech'>
-        {props.mechanic}
+        <Link to={'/mechanics/' + mechUp.name} onClick={props.onClick(false)}>{mechUp.name}</Link>
       </div>
       <div id="centertext">
         <h5>What is it?</h5>
         <p>{moveUp.what}</p>
         <h5>What can it do and how?</h5>
           {effects}
-        {/*<h5 style={{paddingTop: '10px'}}>Examples</h5>
-        <ul>
-          {examples}
-        </ul>*/}
+      </div>
+    </>
+    )
+  }
+
+  else if (props.move && effects === 'coming soon!') {
+
+    return (
+    <>
+      <div id='movesLinks'>
+        {movesLinks}
+      </div>
+      <div id='activeMech'>
+        <Link to={'/mechanics/' + mechUp.name} onClick={props.onClick(false)}>{mechUp.name}</Link>
+      </div>
+      <div id="centertext">
+        <img src={wipsvg} alt="under construction" style={{height: '100px'}}></img>
       </div>
     </>
     )

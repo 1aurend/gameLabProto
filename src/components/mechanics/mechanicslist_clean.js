@@ -556,11 +556,8 @@ const mechanicsList = [
     what: `Strategies are made up of a series of actions, which typically extend beyond a single turn or session of play. Some games have a single, dominant strategy. We often call such games puzzles. Once a player learns this strategy the game is solved and no longer engaging; the player has mastered the game. More typical games allow for multiple approaches leading to a diversity of outcomes and opportunites for replay.`,
     moves: [
       {
-        name: 'something',
+        name: 'coming soon!',
       },
-      {
-        name: 'something else'
-      }
     ],
   },
   {
@@ -570,13 +567,7 @@ const mechanicsList = [
     moves:
       [
         {
-          name: 'verbs',
-        },
-        {
-          name: 'more verbs',
-        },
-        {
-          name: 'even more verbs',
+          name: 'coming soon!',
         },
       ]
     }

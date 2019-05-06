@@ -76,7 +76,7 @@ class DiceNav extends Component {
       rightDiceLinks = ['/seminar', '/tools']
     }
 
-    var centerColor = this.state.active ? {backgroundColor: '#fcf5eb'} : {backgroundColor: '#fcf5eb'}
+    var centerColor = this.state.active ? {backgroundColor: 'none'} : {backgroundColor: 'none'}
 
 
     return (
