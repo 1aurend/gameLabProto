@@ -212,6 +212,10 @@ p, li {
   color: #fcf5eb;
 }
 
+.imgLink>img {
+  width: 72px;
+}
+
 h2 {
   font-family: 'Nunito', sans-serif;
   font-size: 32px;
