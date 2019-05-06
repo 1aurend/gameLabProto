@@ -10,15 +10,16 @@ function Seminar (props) {
 
   return(
       <div className="biggrid" style={{backgroundColor: '#e2af3b'}}>
-      <div id='mechanicstitle'>
-        <img src={gameLab} alt='gameLab' className='gameLab' style={{maxHeight: '50%'}}/>
-        <div className='pageTitle'><h1 style={{color: '#e2af3b'}}>the seminar</h1></div>
-      </div>
-        <div id='subpageDiceNav'>
-          <DiceNav path={props.location.pathname}/>
+        <div id='mechanicstitle'>
+          <div id='titleimg'></div>
+          <div className='pageTitle'><h1 style={{color: '#e2af3b'}}>the seminar</h1></div>
+          <div id='subpageDiceNav'>
+            <DiceNav path={props.location.pathname}/>
+          </div>
         </div>
+
         <div id='seminarBlurb'>
-          <p style={{color: '#3b3c3d'}}>In Spring 2019, we taught a Bok Seminar for graduate students called Let’s Play! What Games can Teach us about Motivation and Engagement. We used Jesse Schell’s The Art of Game Design as our textbook. (We think it should be required reading for all teachers.) Each week we discussed a different game mechanic or design principle, and participants designed assignments that deployed that mechanic. View our full syllabus below.
+          <p>In Spring 2019, we taught a Bok Seminar for graduate students called Let’s Play! What Games can Teach us about Motivation and Engagement. We used Jesse Schell’s The Art of Game Design as our textbook. (We think it should be required reading for all teachers.) Each week we discussed a different game mechanic or design principle, and participants designed assignments that deployed that mechanic. View our full syllabus below.
           </p>
         </div>
         <div id='syllabus1'>

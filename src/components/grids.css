@@ -1,6 +1,61 @@
 html, body {
   margin: 0;
   padding: 0;
+  font-size: calc(10px + (26 - 10) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.ninegrid{
+  display: grid;
+  grid-template-columns: .5fr 1fr .5fr repeat(3, 1fr) .5fr 1fr .5fr;
+  grid-template-rows: repeat(9, 1fr);
+  width: 100%;
+  height: 100%;
+  background-color: #30AEA4;
+}
+
+#mechanicstitle {
+  grid-column: 4 / span 3;
+  grid-row: 1 / span 3;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: #fcf5eb;
+  padding: 1.5em;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+#titleimg{
+  background-image: url('../assets/dev_subtitle.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  min-height: 3em;
+}
+
+h1 {
+  padding: 0.25em;
+  font-size: 2em;
+  line-height: 0.5em;
+  align-self: center;
+
+}
+
+#diceNav {
+  grid-column: 4 / span 3;
+  grid-row: 3 / span 1;
+  align-self: center;
+}
+
+#centerPane{
+  grid-column: 4 / span 3;
+  grid-row: 4 / span 6;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  width: 100%;
+  height: 100%;
 }
 
 .ninegridOriginal{
@@ -74,6 +129,11 @@ html, body {
   padding-left: 10px;
 }
 
+li{
+  list-style-type: none;
+  margin: 1em 0;
+}
+
 a{
   text-decoration: none;
 }
@@ -138,10 +198,10 @@ a{
 }
 
 
-p {
+p, li {
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  padding-top: 0px;
+  font-size: 0.7rem;
+  line-height: 1.5rem;
   color: #fcf5eb;
 }
 
@@ -161,12 +221,35 @@ h2 {
 h3 {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
+  color: #fcf5eb;
+}
+
+h4 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5em;
+  color: #fcf5eb;
+  margin: 0 0 -0.5em 0 ;
+  padding-top: 0.5em;
 }
 
 h5 {
   font-family: 'Nunito', sans-serif;
-  font-size: 18px;
+  font-size: 1em;
   color: #fcf5eb;
   padding-bottom: 0px;
   margin: auto;
+}
+
+.Collapsible .Collapsible__trigger{
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #fcf5eb;
+  padding: 0 1rem;
+  text-transform: lowercase;
+}
+
+.Collapsible__contentInner{
+  margin-top: -0.5rem;
+  padding: 0 2rem;
 }

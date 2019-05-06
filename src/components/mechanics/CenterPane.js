@@ -65,7 +65,7 @@ function CenterPane (props) {
   }
 
 
-  const movesLinks = mechUp.moves ? movesColors.map((move) => <h5 className='movesLinksText' onClick={props.onClick(move.name)} key={move.name} style={{color: move.color}}> &nbsp;&nbsp;&nbsp;&nbsp;<span>{move.name}</span></h5> ) : 'coming soon!'
+  const movesLinks = mechUp.moves ? movesColors.map((move) => <h5 className='movesLinksText' onClick={props.onClick(move.name)} key={move.name} style={{color: move.color}}><span>{move.name}</span></h5> ) : 'coming soon!'
 
   const effects = moveUp.effects ? moveUp.effects.map((effect) =>
     <Collapsible trigger={effect.what} className='Collapsible__trigger' key={effect.what}>
