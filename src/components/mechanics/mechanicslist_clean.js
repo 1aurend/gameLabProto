@@ -438,20 +438,99 @@ const mechanicsList = [
   },
   {
     name: 'chance',
-    pitch: '',
-    what: '',
+    pitch: 'Just like time and space, chance is another of those things that every teacher has had to deal with at some point. The best-laid lesson plan is no match for the endless parade of uncertainty inevitably encountered in the act of leading a group of people, however eager, through unfamiliar intellectual territory. Teachers spend a lot of time managing contingency by preparing for unexpected interruptions and hangups, but also just as much time deploying it—in every cold call and every pop quiz is a keen awareness of the motivating power of chance. As teachers, we should be mindful of the effects that chance—real and perceived—can have on the student experience, and leverage its benefits wisely.',
+    what: 'Chance is unique among the game designer’s toolbox in that it exists on a sort of higher level. Rather than comprising discrete moves that a designer can deploy for various concrete purposes, chance is concerned with the big picture of how interactions among other mechanics combine to shape a player’s overall experience. The savvy game designer thinks of chance as a vehicle for drama and surprise, but knows to be careful in deploying it. Used well, chance has the power to generate hope and excitement; used in excess, chance can create a sense of powerlessness and despair in the face of overwhelming arbitrariness.',
     moves: [
       {
-        name: 'roll',
+        name: 'uncertainty',
+        what: 'We can think of uncertainty as the perception of chance. With its ability to create dramatic tension, uncertainty is a key tool in the game designer’s arsenal. People keep playing to find out what happens next; a game where the outcome is totally predetermined wouldn’t be much fun to play.',
+        effects: [
+          {
+            what: 'Simulate reality',
+            how: [
+              'Real life is full of uncertainty, and the mechanic of chance can be used in simulations or role-playing activities to generate problems for students to solve'
+            ]
+          },
+          {
+            what: 'Create suspense',
+            how: [
+              'Suspense naturally accompanies uncertainty—the anticipation of resolution has an unparalleled power to motivate'
+            ]
+          },
+          {
+            what: 'Provide variety',
+            how: [
+              'Uncertainty can be used to spice up a learning experience by creating the impression that nothing is predetermined and anything can happen'
+            ]
+          }
+        ]
       },
       {
-        name: 'spin',
+        name: 'risk',
+        what: 'Where chance goes, risk inevitably follows. In most games, stakes exist alongside uncertainty, forcing players to choose actions based on an estimate of the relative probabilities of various desirable and undesirable outcomes. This sort of calculated risk-taking is often a core element of gameplay, and carries with it much of the emotional payload of the game in question—some risks are rewarded with pleasant surprises, others are punished with failure. As teachers, we can be thoughtful about how students perceive the risk-reward structure in classroom settings, and try to create ways of mitigating risk in some situations, while encouraging them to step outside their comfort zones in others.',
+        effects: [
+          {
+            what: 'Act as a scapegoat',
+            how: [
+              'The presence of chance can have the effect of decoupling skill from outcome',
+              'Students might feel encouraged to take bigger risks if there is enough stochasticity in the classroom that they can blame failures on chance'
+            ]
+          },
+          {
+            what: 'Encourage strategy',
+            how: [
+              'By deliberately structuring assessments to allow multiple avenues of success in a class, a teacher can accommodate risk-averse students while also keeping the more risk-tolerant students interested'
+            ]
+          },
+        ]
       },
       {
-        name: 'draw',
+        name: 'randomize',
+        what: 'The problem of creating stochastic outcomes for the purpose of moving an experience forward is a familiar one for game designers, and many of the most recognizable components of modern-day tabletop games were invented for the express purpose of generating randomness. These vary widely in complexity and flexibility. A simple coin toss creates a binary outcome, dice and spinners are effective at generating smaller integers, while cards are easy to manipulate and can be tailored to the context. Random assignment comes up a lot in the classroom, where there are countless instances where decisions need to be made, but the teacher simply doesn’t have the time or bandwidth to be intentional about every single outcome.',
+        effects: [
+          {
+            what: 'Create groups',
+            how: [
+              'A teacher might want to divide up the class into smaller groups for any number of reasons (workspace, groupwork, collaborative projects, sectioning). Random numbers are an effective way of breaking up preexisting social dynamics, and has the added advantage of removing the appearance of agency from the teacher, thereby preempting any challenges',
+            ]
+          },
+          {
+            what: 'Generate samples expediently',
+            how: [
+              'It’s frequently necessary in teaching to obtain a representative sample of some greater whole. Cold-calling is perhaps the best-known instance of this, but chance can also be used to determine which questions to take in a lecture, or what material to include on a quiz',
+            ]
+          },
+          {
+            what: 'Advance through content',
+            how: [
+              'Much as a dungeon master might use dice rolls to randomly determine how events unfold over the course of a session, a teacher can use chance to decide the order in which their seminar or section moves through a list of topics, or determine the direction a discussion goes in',
+            ]
+          },
+          {
+            what: 'Reduce instructor’s apparent agency',
+            how: [
+              'Relying on visible randomizing mechanics to perform assignment-type tasks can help diminish the perception that the teacher is handing down decisions from on high, and help students feel that their interests are aligned with those of the teaching staff',
+            ]
+          },
+        ]
       },
       {
-        name: 'risk'
+        name: 'balance',
+        what: 'Game designers understand that balance is key to engaging gameplay. Chance is a powerful tool for creating balance, by ensuring that the experience is predictably unpredictable. In the classroom, it can sometimes be as useful to disrupt balance as it is to maintain it.',
+        effects: [
+          {
+            what: 'Create balance',
+            how: [
+              'Students care about equality of opportunity—nobody wants to feel like the deck is stacked against them. The judicious application of chance can help teachers maintain a sense of balanced treatment, by making students perceive that their experiences are equally influenced by uncertainty',
+            ]
+          },
+          {
+            what: 'Disrupt balance',
+            how: [
+              'On the other hand, a teacher may sometimes find it useful to disrupt equilibrium—for instance if a few students have come to dominate discussions, or if one particular group is consistently moving through activities faster than the others. Random disruptions can be used to interrupt undesirable patterns in the classroom by knocking everyone off balance long enough for a new symmetry to emerge',
+            ]
+          },
+        ]
       }
     ],
   },

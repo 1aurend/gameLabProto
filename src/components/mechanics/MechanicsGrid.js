@@ -14,14 +14,23 @@ import challengesvg from '../../assets/challenge.svg'
 import strategysvg from '../../assets/strategy.svg'
 import multiplayersvg from '../../assets/multiplayer.svg'
 import trainingsvg from '../../assets/training.svg'
-import timesvg_invert from '../../assets/time_invert.svg'
-import spacesvg_invert from '../../assets/space_invert.svg'
-import actionsvg_invert from '../../assets/action_invert.svg'
-import chancesvg_invert from '../../assets/chance_invert.svg'
-import challengesvg_invert from '../../assets/challenge_invert.svg'
-import strategysvg_invert from '../../assets/strategy_invert.svg'
-import multiplayersvg_invert from '../../assets/multiplayer_invert.svg'
-import trainingsvg_invert from '../../assets/training_invert.svg'
+import greenTime from '../../assets/time_green.svg'
+import goldTime from '../../assets/time_gold.svg'
+import greenSpace from '../../assets/space_green.svg'
+import goldSpace from '../../assets/space_gold.svg'
+import greenChance from '../../assets/chance_green.svg'
+import goldChance from '../../assets/chance_gold.svg'
+import greenChallenge from '../../assets/challenge_green.svg'
+import goldChallenge from '../../assets/challenge_gold.svg'
+import greenAction from '../../assets/action_green.svg'
+import goldAction from '../../assets/action_gold.svg'
+import greenStrategy from '../../assets/strategy_green.svg'
+import goldStrategy from '../../assets/strategy_gold.svg'
+import greenTraining from '../../assets/training_green.svg'
+import goldTraining from '../../assets/training_gold.svg'
+import greenMultiplayer from '../../assets/multiplayer_green.svg'
+import goldMultiplayer from '../../assets/multiplayer_gold.svg'
+
 
 
 class MechanicsGrid extends Component {
@@ -81,42 +90,50 @@ class MechanicsGrid extends Component {
       time: {
         font: '#fcf5eb',
         svg: timesvg,
-        invsvg: timesvg_invert
+        green: greenTime,
+        gold: goldTime,
       },
       space: {
         font: '#fcf5eb',
         svg: spacesvg,
-        invsvg: spacesvg_invert
+        green: greenSpace,
+        gold: goldSpace,
       },
       chance: {
         font: '#fcf5eb',
         svg: chancesvg,
-        svg: chancesvg_invert,
+        green: greenChance,
+        gold: goldChance,
       },
       action: {
         font: '#fcf5eb',
         svg: actionsvg,
-        svg: actionsvg_invert
+        green: greenAction,
+        gold: goldAction,
       },
       challenge: {
         font: '#fcf5eb',
         svg: challengesvg,
-        svg: challengesvg_invert
+        green: greenChallenge,
+        gold: goldChallenge,
       },
       training: {
         font: '#fcf5eb',
         svg: trainingsvg,
-        svg: trainingsvg_invert
+        green: greenTraining,
+        gold: goldTraining,
       },
       strategy: {
         font: '#fcf5eb',
         svg: strategysvg,
-        svg: strategysvg_invert
+        green: greenStrategy,
+        gold: goldStrategy,
       },
       multiplayer: {
         font: '#fcf5eb',
         svg: multiplayersvg,
-        svg: multiplayersvg_invert
+        green: greenMultiplayer,
+        gold: goldMultiplayer,
       },
     }
 
@@ -124,24 +141,12 @@ class MechanicsGrid extends Component {
         if (this.state.activeMech === Object.keys(gridColors)[i] && !this.props.dChallenges) {
           let key = Object.keys(gridColors)[i]
           gridColors[key]['font'] = '#7fc8a0'
-          gridColors[key]['svg'] = gridColors[key]['invsvg']
-          console.log(gridColors[key]['svg']);
+          gridColors[key]['svg'] = gridColors[key]['green']
         }
         else if (this.state.activeMech === Object.keys(gridColors)[i] && this.props.dChallenges) {
           let key = Object.keys(gridColors)[i]
           gridColors[key]['font'] = '#e2af3b'
-        }
-    }
-
-    let fontColor = ['','','','','','','','']
-    fontColor.fill('#fcf5eb', 0, 8)
-    let theMechanics = ['time', 'space', 'chance', 'action', 'challenge', 'training', 'strategy', 'multiplayer']
-    for (var i = 0; i < theMechanics.length; i++) {
-        if (this.state.activeMech === theMechanics[i] && !this.props.dChallenges) {
-          fontColor[i] = '#7fc8a0'
-        }
-        else if (this.state.activeMech === theMechanics[i] && this.props.dChallenges) {
-          fontColor[i] = '#e2af3b'
+          gridColors[key]['svg'] = gridColors[key]['gold']
         }
     }
 
@@ -171,28 +176,28 @@ class MechanicsGrid extends Component {
           <Link className="mechLink" to={linkPath + 'space'} onClick={(e) => this.onClickMech('space', e)} style={{color: gridColors.space.font}}>Space</Link>
         </div>
         <div class='grid9mech' id='mechanic3'>
-          <img src={chancesvg} alt='hand of cards' />
-          <Link className="mechLink" to={linkPath + 'chance'} onClick={(e) => this.onClickMech('chance', e)} style={{color: fontColor[2]}}>Chance</Link>
+          <img src={gridColors.chance.svg} alt='hand of cards' />
+          <Link className="mechLink" to={linkPath + 'chance'} onClick={(e) => this.onClickMech('chance', e)} style={{color: gridColors.chance.font}}>Chance</Link>
         </div>
         <div class='grid9mech' id="mechanic4">
-          <img src={actionsvg} alt='dominos' />
-          <Link className="mechLink" to={linkPath + 'action'} onClick={(e) => this.onClickMech('action', e)} style={{color: fontColor[3]}}>Action</Link>
+          <img src={gridColors.action.svg} alt='dominos' />
+          <Link className="mechLink" to={linkPath + 'action'} onClick={(e) => this.onClickMech('action', e)} style={{color: gridColors.action.font}}>Action</Link>
         </div>
         <div class='grid9mech' id="mechanic5">
-          <img src={challengesvg} alt='mountain' />
-          <Link className="mechLink" to={linkPath + 'challenge'} onClick={(e) => this.onClickMech('challenge', e)} style={{color: fontColor[4]}}>Challenge</Link>
+          <img src={gridColors.challenge.svg} alt='mountain' />
+          <Link className="mechLink" to={linkPath + 'challenge'} onClick={(e) => this.onClickMech('challenge', e)} style={{color: gridColors.challenge.font}}>Challenge</Link>
         </div>
         <div class='grid9mech' id="mechanic6">
-          <img src={trainingsvg} alt='checkerboard' />
-          <Link className="mechLink" to={linkPath + 'training'} onClick={(e) => this.onClickMech('training', e)} style={{color: fontColor[5]}}>Training</Link>
+          <img src={gridColors.training.svg} alt='checkerboard' />
+          <Link className="mechLink" to={linkPath + 'training'} onClick={(e) => this.onClickMech('training', e)} style={{color: gridColors.training.font}}>Training</Link>
         </div>
         <div class='grid9mech' id="mechanic7">
-          <img src={strategysvg} alt='chess knight' />
-          <Link className="mechLink" to={linkPath + 'strategy'} onClick={(e) => this.onClickMech('strategy', e)} style={{color: fontColor[6]}}>Strategy</Link>
+          <img src={gridColors.strategy.svg} alt='chess knight' />
+          <Link className="mechLink" to={linkPath + 'strategy'} onClick={(e) => this.onClickMech('strategy', e)} style={{color: gridColors.strategy.font}}>Strategy</Link>
         </div>
         <div class='grid9mech' id="mechanic8">
-          <img src={multiplayersvg} alt='controllers' />
-          <Link className="mechLink" to={linkPath + 'multiplayer'}onClick={(e) => this.onClickMech('multiplayer', e)} style={{color: fontColor[7]}}>Multiplayer</Link>
+          <img src={gridColors.multiplayer.svg} alt='controllers' />
+          <Link className="mechLink" to={linkPath + 'multiplayer'}onClick={(e) => this.onClickMech('multiplayer', e)} style={{color: gridColors.multiplayer.font}}>Multiplayer</Link>
         </div>
       </div>
 </div>
