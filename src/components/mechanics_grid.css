@@ -19,10 +19,10 @@ html, body {
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
   background-color: #fcf5eb;
-  padding: 1.5em;
+  padding: 1.5rem;
   display:flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 
@@ -31,13 +31,13 @@ html, body {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: contain;
-  min-height: 3em;
+  min-height: 3rem;
 }
 
 .pageTitle>h1 {
-  padding: 0.25em;
-  font-size: 2em !important;
-  line-height: 0.9em;
+  padding: 0.25rem;
+  font-size: 2rem !important;
+  line-height: 0.9rem;
   align-self: center;
 
 }
@@ -68,10 +68,10 @@ html, body {
 
 .movesLinksText {
   color: #7fc8a0;
-  margin-top: -1em;
+  margin-top: -1rem;
   padding-bottom: 0px;
   cursor: pointer;
-  border-bottom: 0.15em solid;
+  border-bottom: 0.15rem solid;
 }
 
 #activeMech {
@@ -81,10 +81,10 @@ html, body {
   margin-right: auto;
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 2rem;
   color: #7fc8a0;
   padding-top: 0;
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 
 #activeMech > a{
@@ -175,5 +175,5 @@ html, body {
 
 .grid9mech img {
   width: 2.5rem;
-  padding: 0em 0.5rem 0.35rem;
+  padding: 0 0.5rem 0.35rem;
 }

@@ -37,7 +37,7 @@ html, body {
   border-top-left-radius: 15px;
   background-color: #fcf5eb;
   display:flex;
-  padding: 1.5em 0 1.5em;
+  padding: 1.5rem 0 1.5rem;
   flex-direction: column;
   justify-content: flex-start;
   z-index: 1;
@@ -50,7 +50,7 @@ html, body {
 }
 
 #hometitle h1{
-  padding-top: 0.5em;
+  padding-top: 1rem;
 }
 
 #mechanicstitle {
@@ -59,7 +59,7 @@ html, body {
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
   background-color: #fcf5eb;
-  padding: 1.5em;
+  padding: 1.5rem;
   display:flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -71,7 +71,7 @@ html, body {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: contain;
-  min-height: 3em;
+  min-height: 3rem;
 }
 
 
@@ -109,7 +109,7 @@ html, body {
 }
 
 #pitch{
-  padding: 1em 4.5em 3em;
+  padding: 2rem 4rem 3rem;
   overflow: auto;
 }
 
@@ -145,7 +145,7 @@ html, body {
   text-transform: lowercase;
   font-size: 0.75rem;
   white-space: nowrap;
-  padding-left: 0.5em;
+  padding-left: 0.5rem;
 }
 
 #subtitle{
@@ -241,9 +241,9 @@ li{
 h1 {
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
-  padding: 0.25em;
+  padding: 0.25rem;
   font-size: 2rem;
-  line-height: 0.5em;
+  line-height: 0.5rem;
   text-align: center;
   margin: auto;
 }
@@ -263,15 +263,15 @@ h3 {
 
 h4 {
   font-family: 'Nunito', sans-serif;
-  font-size: 1.5em;
+  font-size: 0.65rem;
   color: #fcf5eb;
-  margin: 0 0 -0.5em 0 ;
-  padding-top: 0.5em;
+  margin: 0 0 0.5rem 0 ;
+  padding-top: 0.5rem;
 }
 
 h5 {
   font-family: 'Nunito', sans-serif;
-  font-size: 1em;
+  font-size: 0.8rem;
   color: #fcf5eb;
   padding-bottom: 0px;
   margin: auto;
