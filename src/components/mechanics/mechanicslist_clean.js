@@ -3,7 +3,7 @@ const mechanicsList = [
     name: "mechanics",
     pitch: "Mechanics are the interactions and relationships that make a game a system. They make the game interactive rather than something you just take in. Put simply, mechanics are what make a game work. For this reason, mechanics are the key way teachers can apply the logic of game design to the classroom.",
     structure: 'Structure of this Inventory: Our mechanics are divided into eight conceptual categories. Each category contains an introduction to the mechanic and a bit about how game designers understand or conceptualize it. Linked at the top of each category page are specific, implementable mechanics with ideas for why and how to use them.',
-    go: 'Already done exploring and ready to implement these ideas? Jump straight to our mechanics-based design challenges!'
+    go: 'Already done exploring and ready to implement these ideas? Jump straight to our mechanics-based '
   },
   {
     name: "time",

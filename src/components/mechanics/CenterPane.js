@@ -88,7 +88,7 @@ function CenterPane (props) {
       <div id="landingtext">
         <p>{mechUp.pitch}</p>
         <p>{mechUp.structure}</p>
-        <p>{mechUp.go}</p>
+        <p>{mechUp.go} <Link to='/tools/challenges' style={{color: '#7fc8a0'}}>design challenges!</Link></p>
       </div>
     </>
     )
