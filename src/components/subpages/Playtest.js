@@ -17,7 +17,7 @@ function Playtest (props) {
 
       <div id='mechanicstitle'>
         <Link to='/'><div id='titleimg'></div></Link>
-        <div className='pageTitle'><Link to='/tools/playtest'><h1 style={{color: '#30AEA4'}}>playtest your assignment</h1></Link></div>
+        <div className='pageTitle'><Link to='/tools/playtest'><h1 style={{color: '#30AEA4'}}>playtesting</h1></Link></div>
         <div id='subpageDiceNav'>
           <DiceNav path={props.location.pathname}/>
         </div>
