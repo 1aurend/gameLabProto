@@ -135,7 +135,7 @@ html, body {
 }
 
 .navDice{
-  max-height: inherit;
+  max-height: 40px;
 }
 
 .navText{
