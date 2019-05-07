@@ -16,7 +16,7 @@ const theMechanics = (
     <h5>the mechanics</h5>
     <p>Mechanics are the interactions and relationships that make a game a system. They make the game interactive rather than something you just take in. Put simply, mechanics are what make a game work. For this reason, mechanics are the key way teachers can apply the logic of game design to the classroom.</p>
     <p>Use our mechanic inventory to explore implementing game mechanics in your class.</p>
-    <Link className='navText' to='/mechanics' style={{color:"#fcf5eb", paddingLeft: '40%'}}><img src={go} alt='go!' style={{height: '30px', paddingTop: '1rem'}}></img></Link>
+    <div style={{minWidth:'100%', display:'flex', flexDirection:'row', justifyContent:'center'}}><Link to='/mechanics' style={{width:"1.5rem"}}><img src={go} alt='go!' style={{height: '1.5rem', paddingTop: '1rem'}}></img></Link></div>
   </>
 )
 
