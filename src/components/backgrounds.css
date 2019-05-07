@@ -152,13 +152,10 @@
   width: 100%;
   align-items: center;
   justify-content: center;
-  border-bottom: 3px solid #3b3c3d;
-
 }
 
 #boxlatch {
   margin: 0.1rem 0 0 0;
-  border: 8px solid #3b3c3d;
   border-radius: 25px;
   position: absolute;
   width: 3em;

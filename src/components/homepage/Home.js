@@ -55,12 +55,17 @@ class Home extends Component {
   }
 
   render() {
+
+    let latch = ('8px solid ' + this.state.color)
+    let opening = ('3px solid ' + this.state.color)
+    console.log(latch);
+
     return (
           <div className='ninegrid' style={{backgroundColor: this.state.color}}>
             <div id='boxhandle'></div>
             <div id='hometile'>
-              <div id='boxopening'>
-                <div id='boxlatch'></div>
+              <div id='boxopening' style={{borderBottom: opening}}>
+                <div id='boxlatch' style={{border: latch}}></div>
               </div>
               <div id='hometitle'>
                 <Link to='/'><div id='titleimg'></div></Link>
