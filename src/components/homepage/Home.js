@@ -79,7 +79,9 @@ class Home extends Component {
               <NavSimp onHover={(e) => this.onMouseOver(e)} active={this.state.contentUp} />
             </div>
             <div id='pacmantile'>
-              <Pacman playing={this.state.pacman} onClick={() => this.playPacman()} /> 
+              <div style={{position: 'absolute'}}>
+                <Pacman playing={this.state.pacman} onClick={() => this.playPacman()} />
+              </div>
             </div>
             <div id='dotsleftbendrightdown2'></div>
             <div id='dotsrightstrip3'></div>
