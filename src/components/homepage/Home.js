@@ -28,8 +28,6 @@ class Home extends Component {
       contentUp: '0',
       color: '#3b3c3d',
       pacman: false,
-      snake: false,
-      tetris: false,
     }
 
     this.onMouseOver = this.onMouseOver.bind(this);
@@ -50,9 +48,6 @@ class Home extends Component {
     this.setState({snake: !this.state.snake});
   }
 
-  playTetris(){
-    this.setState({tetris: !this.state.tetris});
-  }
 
   render() {
 
@@ -85,14 +80,6 @@ class Home extends Component {
             </div>
             <div id='dotsleftbendrightdown2'></div>
             <div id='dotsrightstrip3'></div>
-
-
-
-            {/*
-            <div id='pacman'>
-              <Pacman playing={this.state.pacman} onClick={() => this.playPacman()} color={this.state.color}/>
-            </div>
-            */}
           </div>
     )
   }
