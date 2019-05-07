@@ -42,15 +42,17 @@ class MechanicsGrid extends Component {
       activeMove: false,
     }
     this.onClick = this.onClick.bind(this)
+    console.log('constructor log = ' + props.mechanic);
 
   }
 
   componentDidUpdate(prevProps, prevState) {
-  if (this.props.location !== prevProps.location) {
+  if (this.props.location !== prevProps.location || this.props.dChallenges !== prevProps.dChallenges || this.props.mechanic !== prevProps.mechanic) {
      this.setState({
        activeMech: this.props.mechanic,
        activeMove: false,
      })
+     console.log('update log = ' + this.props.mechanic);
   }
 }
 
@@ -64,6 +66,10 @@ class MechanicsGrid extends Component {
 
 
   render() {
+
+    console.log('render state mech: ' + this.state.activeMech);
+    console.log('render prop mech: ' + this.props.mechanic);
+    console.log('here is dChallenges: ' + this.props.dChallenges);
 
     let center
     let background = this.props.backgroundColor
@@ -150,7 +156,7 @@ class MechanicsGrid extends Component {
       <div className="biggrid" style={{backgroundColor: background}}>
         <div id='mechanicstitle'>
           <Link to='/'><div id='titleimg'></div></Link>
-          <div className='pageTitle'><Link to='/mechanics'><h1 style={{color: background}}>{title}</h1></Link></div>
+          <div className='pageTitle'><Link to={linkPath}><h1 style={{color: background}}>{title}</h1></Link></div>
           <div id='diceNav'>
             <DiceNav path={this.props.location.pathname}/>
           </div>

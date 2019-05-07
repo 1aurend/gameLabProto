@@ -36,11 +36,12 @@ function findMove (mech, move) {
 
 function CenterPane (props) {
 
-  console.log('here is mech: ' + props.mechanic);
-  console.log('here is move: ' + props.move);
-
   let mechUp = findMechanic(props.mechanic)
   let moveUp = props.move ? findMove(props.mechanic, props.move) : false
+
+  if (mechUp === undefined) {
+    return <></>
+  }
 
   let movesColors = []
   if (props.mechanic !== 'mechanics' && mechUp.moves) {

@@ -15,7 +15,7 @@ const NavSwitch = () => (
 
       <Route exact path='/' component={Home}/>
 
-      <Route exact path='/mechanics' render={(props) => <MechanicsGrid {...props} mechanic={'mechanics'} backgroundColor={'#dd3d27'}/>} />
+      <Route exact path='/mechanics' render={(props) => <MechanicsGrid {...props} mechanic={'mechanics'} dChallenges={false} backgroundColor={'#dd3d27'}/>} />
       <Route exact path='/mechanics/' render={(props) => <MechanicsGrid {...props} mechanic={'mechanics'} backgroundColor={'#dd3d27'}/>} />
 
       <Route path='/mechanics/time' render={(props) => <MechanicsGrid {...props} mechanic={'time'} backgroundColor={'#dd3d27'}/>} />

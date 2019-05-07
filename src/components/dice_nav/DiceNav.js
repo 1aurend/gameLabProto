@@ -30,11 +30,15 @@ class DiceNav extends Component {
     });
   }
 
-  componentWillMount() {
-    this.setState({
-      path: this.props.path
-    });
+
+  componentDidUpdate(prevProps, prevState) {
+  if (this.props.path !== prevProps.path) {
+     this.setState({
+       path: this.props.path,
+       active: false,
+     })
   }
+}
 
   render() {
     let leftDice;
