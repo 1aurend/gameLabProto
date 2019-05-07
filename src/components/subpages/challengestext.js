@@ -69,7 +69,7 @@ const strategy = (
   <>
     <h5>Associated reading: Schell, chapter 12 & 13</h5>
     <ul>
-      <li>Coming soon!</li>
+      <li>Design an assignment or activity that offers more than one path to completion. You might do this by starting with an existing assignment and adding choice points that have the potential to yield significant differences in the final product. What creative space or additional modes of thinking and problem solving do you anticipate this will open for the students? And why did you choose/create the type of assignment that you did for this challenge? What makes it the kind of assignment that would benefit from additional freedoms and strategies?</li>
     </ul>
     <h5>Review the mechanic <Link to='/mechanics/strategy'>here</Link></h5>
   </>
