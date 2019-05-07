@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Link, Route } from 'react-router-dom';
 import '../grids.css'
 import '../mechanics_grid.css'
+import '../backgrounds.css'
 import DiceNav from '../dice_nav/DiceNav.js'
 import gameLab from '../../assets/dev_subtitle.svg'
 import CenterPane from './CenterPane.js'
@@ -165,8 +166,8 @@ class MechanicsGrid extends Component {
         <div id='centerPane'>
           {center}
         </div>
-        <div id='dotsleftstrip'></div>
-        <div id='dotsrightstrip'></div>
+        <div id='dotsleftstrip1'></div>
+        <div id='dotsrightstrip1'></div>
         <div className='grid9mech' id='mechanic1'>
           <Link to={linkPath + 'time'}><img src={gridColors.time.svg} alt='hourglass' /></Link>
           <Link className="mechLink" to={linkPath + 'time'} style={{color: gridColors.time.font}}>Time</Link>

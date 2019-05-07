@@ -3,10 +3,12 @@ import Title from './Title.js';
 import NavSwitch from './NavSwitch.js';
 import Pitch from './Pitch.js';
 import '../grids.css';
+import '../backgrounds.css'
+import { Link } from 'react-router-dom'
 import Pacman from '../games/Pacman.js'
-import Snake from '../games/Snake.js'
-import Tetris from '../games/Tetris.js'
 import NavSimp from './Nav_simplified.js'
+import egg from '../../assets/egg.svg'
+
 
 const colors = {
   gray: '#3b3c3d',
@@ -16,7 +18,6 @@ const colors = {
   white: '#fcf5eb',
   gold: '#e2af3b',
   blue: '#30AEA4'
-
 }
 
 class Home extends Component {
@@ -34,6 +35,8 @@ class Home extends Component {
     this.onMouseOver = this.onMouseOver.bind(this);
 
   }
+
+
 
   onMouseOver = (params) => (e) => {
     this.setState({contentUp: params.num, color: params.color});
@@ -53,25 +56,33 @@ class Home extends Component {
 
   render() {
     return (
-          <div className='ninegridOriginal' style={{backgroundColor: this.state.color}}>
-            <div id='title'>
-              <Title />
-            </div>
-            <div id='pitch'>
-              <Pitch text={this.state.contentUp}/>
+          <div className='ninegrid' style={{backgroundColor: this.state.color}}>
+            <div id='hometile'>
+              <div id='hometitle'>
+                <Link to='/'><div id='titleimg'></div></Link>
+                <div className='pageTitle'><Link to='/'><h1 style={{color: this.state.color}}>the toolbox</h1></Link></div>
+              </div>
+              <div id='pitch'>
+                <div style={{color: this.state.color}}><Pitch text={this.state.contentUp}/></div>
+              </div>
             </div>
             <div id='navside'>
               <NavSimp onHover={(e) => this.onMouseOver(e)} active={this.state.contentUp} />
             </div>
+            <div id='pacmantile'>
+              <Link to='/'><img className='easteregg' src={egg} alt='easter egg' /></Link>
+            </div>
+            <div id='dotsleftbendrightdown2'></div>
+            <div id='dotstopline'></div>
+            <div id='dotsrightstrip3'></div>
+
+
+
+            {/*
             <div id='pacman'>
               <Pacman playing={this.state.pacman} onClick={() => this.playPacman()} color={this.state.color}/>
             </div>
-            <div id='snake'>
-              <Snake playing={this.state.snake} onClick={() => this.playSnake()} color={this.state.color}/>
-            </div>
-            <div id='tetris'>
-              <Tetris playing={this.state.tetris} onClick={() => this.playTetris()} color={this.state.color}/>
-            </div>
+            */}
           </div>
     )
   }

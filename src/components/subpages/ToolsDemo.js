@@ -3,25 +3,35 @@ import '../grids.css'
 import playtestpng from '../../assets/playtest-assignment-tall.png'
 import DiceNav from '../dice_nav/DiceNav.js'
 import '../subpages.css'
+import '../backgrounds.css'
+import egg from '../../assets/egg.svg'
 import gameLab from '../../assets/dev_subtitle.svg'
-import { toolsDemo } from '../homepage/pitchText.js'
 import { Link } from 'react-router-dom'
 import playtest from '../../assets/playtest.svg'
 import tetrad from '../../assets/tetrad.svg'
 import designchallenge from '../../assets/designchallenge.svg'
+import Tetris from '../games/Tetris.js'
+
 
 
 function ToolsDemo (props) {
 
   return(
-      <div className="biggrid" style={{backgroundColor: '#30AEA4'}}>
+      <div className="ninegrid" style={{backgroundColor: '#30AEA4'}}>
 
         <div id='mechanicstitle'>
-          <div id='titleimg'></div>
-          <div className='pageTitle'><h1 style={{color: '#30AEA4'}}>tools demo</h1></div>
+          <Link to='/'><div id='titleimg'></div></Link>
+          <div className='pageTitle'><Link to='/tools'><h1 style={{color: '#30AEA4'}}>tools demo</h1></Link></div>
           <div id='subpageDiceNav'>
             <DiceNav path={props.location.pathname}/>
           </div>
+        </div>
+        <div id='dotsleftbenddownleft'></div>
+        <div id='dotsleftbendrightdown'></div>
+        <div id='dotsbottomline'></div>
+        <div id='dotsrightstrip2'></div>
+        <div id='tetristile'>
+          <Link to='/'><img className='easteregg' src={egg} alt='easter egg' /></Link>
         </div>
         <div id='toolsBlurb'>
           <p>Ready to try out our toolkit? Here are three ways to get started:</p>
