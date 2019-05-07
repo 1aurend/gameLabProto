@@ -57,7 +57,11 @@ class Home extends Component {
   render() {
     return (
           <div className='ninegrid' style={{backgroundColor: this.state.color}}>
+            <div id='boxhandle'></div>
             <div id='hometile'>
+              <div id='boxopening'>
+                <div id='boxlatch'></div>
+              </div>
               <div id='hometitle'>
                 <Link to='/'><div id='titleimg'></div></Link>
                 <div className='pageTitle'><Link to='/'><h1 style={{color: this.state.color}}>the toolbox</h1></Link></div>
@@ -73,7 +77,6 @@ class Home extends Component {
               <Link to='/'><img className='easteregg' src={egg} alt='easter egg' /></Link>
             </div>
             <div id='dotsleftbendrightdown2'></div>
-            <div id='dotstopline'></div>
             <div id='dotsrightstrip3'></div>
 
 
