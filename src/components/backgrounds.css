@@ -171,7 +171,7 @@
   cursor: pointer;
 }
 #snaketile {
-  grid-column: 7;
+  grid-column: 8;
   grid-row: 1;
   z-index: 10;
 }

@@ -44,9 +44,6 @@ class Home extends Component {
     this.setState({pacman: !this.state.pacman});
   }
 
-  playSnake(){
-    this.setState({snake: !this.state.snake});
-  }
 
 
   render() {
