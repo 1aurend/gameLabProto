@@ -128,14 +128,17 @@ html, body {
 }
 
 .navLink{
-  margin: 40px;
-  max-height: 4vh;
+  margin: 2rem 1.5rem;
+  max-height: 1.5em;
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 
+
 .navDice{
-  max-height: 40px;
+  max-height: 1.5em;
 }
 
 .navText{

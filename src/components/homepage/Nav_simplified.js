@@ -37,7 +37,7 @@ function Nav(props) {
     if (props.active === '0') {
       aboutNav = (
             <div className="navLink">
-              <Link to='/' style={{height: '20%', width: '20%', display: 'block'}}><img src={die1inv} alt='dice1' className="navDice" onMouseOver={props.onHover({num:'0', color: '#3b3c3d'})} /></Link>
+              <Link to='/' style={{height: '1.5rem', width: '1.5rem', display: 'block'}}><img src={die1inv} alt='dice1' className="navDice" onMouseOver={props.onHover({num:'0', color: '#3b3c3d'})} /></Link>
               <Link className="navText" to='/' onMouseOver={props.onHover({num:'0', color: '#3b3c3d'})} style={{color:"#fcf5eb"}}>about</Link>
             </div>
       )
@@ -45,7 +45,7 @@ function Nav(props) {
     else {
       aboutNav = (
           <div className="navLink">
-            <Link to='/' style={{height: '20%', width: '20%', display: 'block'}}><img src={die1} alt='dice1' className="navDice" onMouseOver={props.onHover({num:'0', color: '#3b3c3d'})} /></Link>
+            <Link to='/' style={{height: '1.5rem', width: '1.5rem', display: 'block'}}><img src={die1} alt='dice1' className="navDice" onMouseOver={props.onHover({num:'0', color: '#3b3c3d'})} /></Link>
             <Link className="navText" to='/' onMouseOver={props.onHover({num:'0', color: '#3b3c3d'})} style={{color:"#3b3c3d"}}>about</Link>
           </div>
       )
@@ -55,7 +55,7 @@ function Nav(props) {
     if (props.active === '1') {
       theMechanicsNav = (
         <div className="navLink">
-          <Link to='/' style={{height: '20%', width: '20%', display: 'block'}}><img src={die2inv} alt='dice1' className="navDice" onMouseOver={props.onHover({num:'1', color: '#dd3d27'})} /></Link>
+          <Link to='/' style={{height: '1.5rem', width: '1.5rem', display: 'block'}}><img src={die2inv} alt='dice1' className="navDice" onMouseOver={props.onHover({num:'1', color: '#dd3d27'})} /></Link>
           <Link className="navText" to='/mechanics' onMouseOver={props.onHover({num:'1', color: '#dd3d27'})} style={{color:"#fcf5eb"}}>the mechanics</Link>
         </div>
       )
@@ -63,7 +63,7 @@ function Nav(props) {
     else {
       theMechanicsNav = (
         <div className="navLink">
-          <Link to='/' style={{height: '20%', width: '20%', display: 'block'}}><img src={die2} alt='dice2' className="navDice" onMouseOver={props.onHover({num:'1', color: '#dd3d27'})} /></Link>
+          <Link to='/' style={{height: '1.5rem', width: '1.5rem', display: 'block'}}><img src={die2} alt='dice2' className="navDice" onMouseOver={props.onHover({num:'1', color: '#dd3d27'})} /></Link>
           <Link className="navText" to='/mechanics' onMouseOver={props.onHover({num:'1', color: '#dd3d27'})} style={{color:"#dd3d27"}}>the mechanics</Link>
         </div>
       )
@@ -73,7 +73,7 @@ function Nav(props) {
     if (props.active === '2') {
       theSeminarNav = (
         <div className="navLink">
-          <Link to='/' style={{height: '20%', width: '20%', display: 'block'}}><img src={die3inv} alt='dice2' className="navDice" onMouseOver={props.onHover({num:'2', color: '#e2af3b'})} /></Link>
+          <Link to='/' style={{height: '1.5rem', width: '1.5rem', display: 'block'}}><img src={die3inv} alt='dice2' className="navDice" onMouseOver={props.onHover({num:'2', color: '#e2af3b'})} /></Link>
           <Link className="navText" to='/seminar' onMouseOver={props.onHover({num:'2', color: '#e2af3b'})} style={{color:"#fcf5eb"}}>the seminar</Link>
         </div>
       )
@@ -81,7 +81,7 @@ function Nav(props) {
     else {
       theSeminarNav = (
         <div className="navLink">
-          <Link to='/' style={{height: '20%', width: '20%', display: 'block'}}><img src={die3} alt='dice2' className="navDice" onMouseOver={props.onHover({num:'2', color: '#e2af3b'})} /></Link>
+          <Link to='/' style={{height: '1.5rem', width: '1.5rem', display: 'block'}}><img src={die3} alt='dice2' className="navDice" onMouseOver={props.onHover({num:'2', color: '#e2af3b'})} /></Link>
           <Link className="navText" to='/seminar' onMouseOver={props.onHover({num:'2', color: '#e2af3b'})} style={{color:"#e2af3b"}}>the seminar</Link>
         </div>
       )
@@ -91,7 +91,7 @@ function Nav(props) {
     if (props.active === '3') {
       toolsDemoNav = (
         <div className="navLink">
-          <Link to='/' style={{height: '20%', width: '20%', display: 'block'}}><img src={die4inv} alt='dice3' className="navDice" onMouseOver={props.onHover({num:'3', color: '#30AEA4'})} /></Link>
+          <Link to='/' style={{height: '1.5rem', width: '1.5rem', display: 'block'}}><img src={die4inv} alt='dice3' className="navDice" onMouseOver={props.onHover({num:'3', color: '#30AEA4'})} /></Link>
           <Link className="navText" to='/tools' onMouseOver={props.onHover({num:'3', color: '#30AEA4'})} style={{color:"#fcf5eb"}}>tools demo</Link>
         </div>
       )
@@ -99,7 +99,7 @@ function Nav(props) {
     else {
       toolsDemoNav = (
         <div className="navLink">
-          <Link to='/' style={{height: '20%', width: '20%', display: 'block'}}><img src={die4} alt='dice3' className="navDice" onMouseOver={props.onHover({num:'3', color: '#30AEA4'})} /></Link>
+          <Link to='/' style={{height: '1.5rem', width: '1.5rem', display: 'block'}}><img src={die4} alt='dice3' className="navDice" onMouseOver={props.onHover({num:'3', color: '#30AEA4'})} /></Link>
           <Link className="navText" to='/tools' onMouseOver={props.onHover({num:'3', color: '#30AEA4'})} style={{color:"#30AEA4"}}>tools demo</Link>
         </div>
       )
@@ -109,7 +109,7 @@ function Nav(props) {
     if (props.active === '4') {
       examplesNav = (
         <div className="navLink">
-          <Link to='/' style={{height: '20%', width: '20%', display: 'block'}}><img src={die5inv} alt='dice4' className="navDice" onMouseOver={props.onHover({num:'4', color: '#a3509f'})} /></Link>
+          <Link to='/' style={{height: '1.5rem', width: '1.5rem', display: 'block'}}><img src={die5inv} alt='dice4' className="navDice" onMouseOver={props.onHover({num:'4', color: '#a3509f'})} /></Link>
           <Link className="navText" to='/examples' onMouseOver={props.onHover({num:'4', color: '#a3509f'})} style={{color:"#fcf5eb"}}>examples</Link>
         </div>
       )
@@ -117,7 +117,7 @@ function Nav(props) {
     else {
       examplesNav = (
         <div className="navLink">
-          <Link to='/' style={{height: '20%', width: '20%', display: 'block'}}><img src={die5} alt='dice4' className="navDice" onMouseOver={props.onHover({num:'4', color: '#a3509f'})} /></Link>
+          <Link to='/' style={{height: '1.5rem', width: '1.5rem', display: 'block'}}><img src={die5} alt='dice4' className="navDice" onMouseOver={props.onHover({num:'4', color: '#a3509f'})} /></Link>
           <Link className="navText" to='/examples' onMouseOver={props.onHover({num:'4', color: '#a3509f'})} style={{color:"#a24f9d"}}>examples</Link>
         </div>
       )
