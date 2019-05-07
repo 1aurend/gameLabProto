@@ -30,13 +30,13 @@ function ChallengePane (props) {
           <p>Many of the design challenges reference chapters of these texts, which we used in our seminar. Check them out!</p>
         </div>
           <div id='schell'>
-            <img src={schell} />
+            <a href='https://www.amazon.com/The-Art-Game-Design-Edition/dp/1466598646' style={{display: 'block'}}><img src={schell} style={{objectFit: 'contain', height: '100%'}}/></a>
           </div>
           <div id='gee'>
-            <img src={gee} />
+            <a href='https://www.amazon.com/Video-Games-Learning-Literacy-Second/dp/1403984530' style={{display: 'block'}}><img src={gee} style={{objectFit: 'contain', height: '100%'}} /></a>
           </div>
           <div id='sylvester'>
-            <img src={sylvester} />
+            <a href='https://www.amazon.com/Designing-Games-Guide-Engineering-Experiences/dp/1449337937' style={{display: 'block'}}><img src={sylvester} style={{objectFit: 'contain', height: '100%'}}/></a>
           </div>
       </>
     )
