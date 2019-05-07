@@ -49,6 +49,10 @@ html, body {
   justify-content: space-between;
 }
 
+#hometitle h1{
+  padding-top: 0.5em;
+}
+
 #mechanicstitle {
   grid-column: 4 / span 3;
   grid-row: 1 / span 3;
