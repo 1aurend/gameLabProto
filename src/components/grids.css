@@ -36,8 +36,8 @@ html, body {
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   background-color: #fcf5eb;
-  padding: 1.5em;
   display:flex;
+  padding: 1.5em 0 1.5em;
   flex-direction: column;
   justify-content: flex-start;
   z-index: 1;
@@ -109,7 +109,7 @@ html, body {
 }
 
 #pitch{
-  padding: 1em 3em 3em 3em;
+  padding: 1em 4.5em 3em;
   overflow: auto;
 }
 
