@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import go from '../../assets/go.svg'
+import goPurp from '../../assets/goPurple.svg'
 
 const about = (
   <>
@@ -47,6 +48,7 @@ const examples = (
   <>
     <h5>examples</h5>
     <p>View our curated collection of sample assignments and activities that explicitly incorporate game mechanics to get some ideas!</p>
+    <div style={{minWidth:'100%', display:'flex', flexDirection:'row', justifyContent:'center'}}><Link to='/examples' style={{width:"1.5rem"}}><img src={goPurp} alt='go!' style={{height: '1.5rem', paddingTop: '1rem'}}></img></Link></div>
   </>
 )
 

@@ -3,6 +3,7 @@ import '../grids.css'
 import DiceNav from '../dice_nav/DiceNav.js'
 import '../subpages.css'
 import '../backgrounds.css'
+import wipsvg from '../../assets/wip.svg'
 
 import gameLab from '../../assets/dev_subtitle.svg'
 import { Link } from 'react-router-dom'
@@ -26,8 +27,8 @@ function Examples (props) {
 
 
         <div id='exampleBlurb'>
-          <p>In Spring 2019, we taught a Bok Seminar for graduate students called Let’s Play! What Games can Teach us about Motivation and Engagement. We used Jesse Schell’s The Art of Game Design as our textbook. (We think it should be required reading for all teachers.) Each week we discussed a different game mechanic or design principle, and participants designed assignments that deployed that mechanic. View our full syllabus below.
-          </p>
+          <p>We’re curating a collection of assignments and class activities that explicitly incorporate game mechanics. While our collection is still under construction, here are some samples of assignment prompts at various stages of development.</p>
+          <div style={{minWidth:'100%', display:'flex', flexDirection:'row', justifyContent:'center'}}><img src={wipsvg} alt='under construction' style={{height: '2rem'}}></img></div>
         </div>
       </div>
 )
