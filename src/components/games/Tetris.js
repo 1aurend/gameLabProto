@@ -10,7 +10,7 @@ function Tetris (props) {
   if (!props.playing) {
     return (
       <div>
-        <img src={eggsvg} alt='tetris' className="easteregg" onClick={props.onClick} />
+        <img src={eggsvg} className="easteregg" onClick={props.onClick} />
       </div>
     )
   }

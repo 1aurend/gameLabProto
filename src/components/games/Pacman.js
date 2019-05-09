@@ -10,7 +10,7 @@ function Pacman (props) {
   if (!props.playing) {
     return (
       <div>
-        <img src={eggsvg} alt='pacman' className="easteregg" onClick={props.onClick} />
+        <img src={eggsvg} className="easteregg" onClick={props.onClick} />
       </div>
     )
   }

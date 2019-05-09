@@ -10,7 +10,7 @@ function Snake (props) {
   if (!props.playing) {
     return (
       <div>
-        <img src={eggsvg} alt='snake' className="easteregg" onClick={props.onClick} />
+        <img src={eggsvg} className="easteregg" onClick={props.onClick} />
       </div>
     )
   }

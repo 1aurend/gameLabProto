@@ -1,8 +1,8 @@
 #subpagetitle {
   grid-column: 4 / span 3;
   grid-row: 1 / span 3;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 0.6rem;
+  border-bottom-left-radius: 0.6rem;
   background-color: #fcf5eb;
   display: block;
 }
@@ -12,16 +12,18 @@
   grid-row: 3 / span 1;
   align-self: center;
 }
-#syllabus1 {
-  grid-column: 1 / span 5;
-  grid-row: 5 / span 4;
+
+
+#syllabusrow {
+  grid-column: 1 / -1;
+  grid-row: 5 / -1;
   padding: 5em 0;
+  display: flex;
 }
 
-#syllabus2 {
-  grid-column: 5 / span 5;
-  grid-row: 5 / span 4;
-  padding: 5em 0;
+.syllabustile img{
+  width:100%;
+  flex-shrink: 1;
 }
 
 #toolsBlurb {
@@ -74,8 +76,26 @@
 
 #exampleBlurb {
   grid-column: 3 / span 5;
-  grid-row: 4 / span 6;
+  grid-row: 4 / span 1;
   margin: 1em auto;
+}
+
+#exampleSet {
+  grid-column: 2 / -2;
+  grid-row: 5 / -1;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  margin-top: 1rem;
+}
+
+.exampleTile img{
+  height: 9rem;
+  border: 2px;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  margin: 0.75rem 1.5rem 2rem;
 }
 
 #playtestpng {
@@ -85,7 +105,13 @@
 
 #tetradpng {
   grid-column: 3 / -3;
-  grid-row: 7 / -1;
+  grid-row: 6 / -1;
+}
+
+#toprightcollapsible {
+  grid-column: 7 / -1;
+  grid-row: 1 / span 3;
+  padding: 1rem;
 }
 
 
@@ -99,39 +125,20 @@
 #challengetext a {
   color: #e2af3b;
 }
-/* #booklinks {
-  grid-column: 1 / span 3;
-  grid-row: 4 / span 6;
-  margin-left: auto;
-  margin-right: auto;
-} */
-#schell {
-  grid-column: 1 / span 1;
-  grid-row: 4 / span 2;
-  /* padding: 5px; */
+
+
+#booklinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 1em;
 }
-#schell>img {
-  object-fit: contain;
-  width: 100%;
-  max-height: 100%;
-}
-#gee {
-  grid-column: 2 / span 1;
-  grid-row: 4 / span 2;
-  /* padding: 5px; */
-}
-#gee>img {
-  object-fit: contain;
-  width: 100%;
-  max-height: 100%;
-}
-#sylvester {
-  grid-column: 3 / span 1;
-  grid-row: 4 / span 2;
-  /* padding: 5px; */
-}
-#sylvester>a {
-  object-fit: contain;
-  width: 100%;
-  max-height: 100%;
+
+#booklinks img {
+  height: 8rem;
+  border: 2px;
+  border-radius: 0.6rem;
+  overflow: hidden;
+
 }
