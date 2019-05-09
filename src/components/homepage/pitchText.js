@@ -5,7 +5,7 @@ import goPurp from '../../assets/goPurple.svg'
 
 const about = (
   <>
-    <h5 style={{textAlign:'center'}}>Welcome to gameLab!<br />The Learning Lab’s game design toolbox<br />for teachers.</h5>
+    <h5 style={{textAlign:'center'}}>Welcome to gameLab!<br />the Learning Lab’s game design toolbox<br />for teachers</h5>
     <p>So why game design? On one fundamental level, game designers and teachers do the same thing-design experiences. Of course, they design (arguably) different kinds of experiences, but game designers seem to be the most successful experience crafters out there-just look at the market share of games! Thus, we as teachers have a lot to learn from their toolkit for crafting dynamic, challenging experiences, which put users at the center.</p>
     <p>The tools here apply the logic of games to the classroom, not to turn the classroom into a game, but so that we can be intentional about centering experience in our instructional design.</p>
   </>
